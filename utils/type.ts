@@ -1,13 +1,13 @@
 export interface ISlide {
-    id: string;
-    h1: string;
-    p: string;
-    Link: string;
-    url: string;
+  id: string;
+  h1: string;
+  p: string;
+  Link: string;
+  url: string;
 }
 
 export interface ICarouselItem {
-    id: string;
+  id: string;
   image: string;
   text: string;
 }
@@ -18,11 +18,11 @@ export interface ICarouselProps {
 
 export interface ITestimonialData {
   id: string;
-  position:  number;
+  position: number;
   imageSrc: string;
   text: string;
   name: string;
-  isActive: boolean;
+  isActive?: boolean;
   height?: number; // Define height prop
 }
 
