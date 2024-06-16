@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { InternetCheck } from "@/utils";
-import Footer from "@/components/Footer/page";
-import Navbar from "@/components/Navbar/page";
+import { Footer } from "@/components/Footer/footer";
+import { Navbar } from "@/components/Navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({

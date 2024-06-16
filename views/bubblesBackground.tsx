@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const Blob = ({ color }: { color: string }) => (
   <div
-    className={`bouncing-blob ${color}`}
+    className={`bouncing-blob overflow-hidden ${color}`}
     style={{
       top: `${Math.random() * 100}vh`,
       left: `${Math.random() * 100}vw`,
@@ -12,30 +12,28 @@ const Blob = ({ color }: { color: string }) => (
   />
 );
 
-const Hero = () => (
-  <div className="hero">
-  </div>
-);
+const Hero = () => <div className="hero"></div>;
 
 const BouncingBlobs = () => (
   <div className="bouncing-blobs-container relative w-full h-full">
     <div className="bouncing-blobs-glass absolute top-0 left-0 w-full h-full bg-opacity-25 bg-blur" />
-      <div className="bouncing-blobs absolute top-0 left-0 w-full h-full flex flex-wrap gap-4">
-        <Blob color="bouncing-blob--blue" />
-        <Blob color="bouncing-blob--blue" />
-        <Blob color="bouncing-blob--blue" />
-        <Blob color="bouncing-blob--white" />
-        <Blob color="bouncing-blob--purple" />
-        <Blob color="bouncing-blob--purple" />
-        <Blob color="bouncing-blob--pink" />
-      </div>
+    <div className="bouncing-blobs absolute top-0 left-0 w-screen h-screen flex flex-wrap gap-4">
+      <Blob color="bouncing-blob--blue" />
+      <Blob color="bouncing-blob--blue" />
+      <Blob color="bouncing-blob--blue" />
+      <Blob color="bouncing-blob--white" />
+      <Blob color="bouncing-blob--purple" />
+      <Blob color="bouncing-blob--purple" />
+      <Blob color="bouncing-blob--pink" />
+    </div>
   </div>
 );
 
 const MIN_SPEED = 1.5;
 const MAX_SPEED = 2.5;
 
-const randomNumber = (min: number, max: number) => Math.random() * (max - min) + min;
+const randomNumber = (min: number, max: number) =>
+  Math.random() * (max - min) + min;
 
 interface BlobType {
   el: HTMLDivElement;
@@ -49,7 +47,9 @@ interface BlobType {
 }
 
 const initBlobs = () => {
-  const blobEls = document.querySelectorAll('.bouncing-blob') as NodeListOf<HTMLDivElement>;
+  const blobEls = document.querySelectorAll(
+    ".bouncing-blob"
+  ) as NodeListOf<HTMLDivElement>;
   const blobs: BlobType[] = Array.from(blobEls).map((blobEl) => {
     const boundingRect = blobEl.getBoundingClientRect();
     return {
@@ -85,14 +85,16 @@ const initBlobs = () => {
         blob.y = 0;
         blob.vy *= -1;
       }
-      blob.el.style.transform = `translate(${blob.x - blob.initialX}px, ${blob.y - blob.initialY}px)`;
+      blob.el.style.transform = `translate(${blob.x - blob.initialX}px, ${
+        blob.y - blob.initialY
+      }px)`;
     });
   };
 
   requestAnimationFrame(update);
 };
 
-const App = () => {
+const BlobApp = () => {
   useEffect(() => {
     initBlobs();
   }, []);
@@ -105,4 +107,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default BlobApp;

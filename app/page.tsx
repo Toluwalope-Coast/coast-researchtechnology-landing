@@ -1,30 +1,32 @@
-import React from 'react';
-import Slider from '@/components/reusables/slider';
-import AboutSection from '@/components/reusables/aboutSection';
-import ServicesSection from '@/components/reusables/servicesSection';
-import App from '@/components/reusables/bubblesBackground';
-import Testimonials from '@/components/reusables/testimonialSection';
-import { testimonial } from '@/utils/data';
+import React from "react";
+import AboutSection from "@/views/aboutSection";
+import ServicesSection from "@/views/servicesSection";
+import BlobApp from "@/views/bubblesBackground";
+import HeroSectionSlider from "@/views/heroSlider";
+import TestimonialSection from "@/views/testimonialCarousel";
+import { EmblaOptionsType } from "embla-carousel";
 
 const Home: React.FC = () => {
+  const OPTIONS: EmblaOptionsType = { loop: true };
+  const SLIDE_COUNT = 8;
+  const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+
   return (
     <main>
       {/* Hero Section Slider */}
-      <Slider />
+      {/* <Slider /> */}
+      <HeroSectionSlider />
 
       {/* About Us Section */}
       <AboutSection />
 
-
       {/* Services Section */}
       <ServicesSection />
 
-
       {/* Testimonial Section */}
-      <Testimonials testimonials={testimonial} />
+      <TestimonialSection slides={SLIDES} options={OPTIONS} />
 
-      {/* Bubble Background */}
-      <App />
+      <BlobApp />
     </main>
   );
 };

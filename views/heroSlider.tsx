@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import { RxDotFilled } from "react-icons/rx"; // replace 'react-icons/rx' with the actual path
-import { ISlide } from "@/utils/type";
-import { slides } from "@/utils/data";
 import Image from "next/image";
-import styles from "./component.module.css";
+import styles from "./views.module.css";
 import Link from "next/link";
 import { ChevronLeftCircleIcon, ChevronRightCircleIcon } from "lucide-react";
+import { slides } from "@/lib/data";
+import { ISlide } from "@/lib/type";
 
-const Slider = () => {
+const HeroSectionSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -57,8 +57,8 @@ const Slider = () => {
         <Image
           key={slides[currentSlide].id}
           src={slides[currentSlide].url}
-          width={380}
-          height={380}
+          width={400}
+          height={400}
           alt={`Slide ${currentSlide + 1}`}
           className={`${styles.slideImage} ${
             slides[currentSlide].url === "3" || slides[currentSlide].url === "4"
@@ -96,4 +96,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default HeroSectionSlider;
