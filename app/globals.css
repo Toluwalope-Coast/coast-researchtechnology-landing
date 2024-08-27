@@ -70,6 +70,40 @@
 
 /* 1.   Global variables*/
 :root {
+  --body-color: #D9D9D9;
+  --nav-color: transparent;
+  --side-nav: #BFBBBB;
+  --primary-text-color: #610083;
+  --clr-secondary-text: #717171;
+  --plain-color: #ffffff;
+  --clr-secondary: #808080;
+  --clr-footer-upper-shadow: #717171;
+  --clr-footer-lower-shadow: #ffffff;
+  --clr-contact-form: #ffffff;
+  --clr-service-list: #ffffff;
+  --clr-about-gradient1: #d9d9d9;
+  --clr-about-gradient2: #808080;
+  --clr-about-gradient3: #717171;
+  --clr-paragraph: #610083;
+  --clr-notable: #242526;
+  --clr-side-drawer: #cccccccf;
+  --clr-testimonial: ffffff80;
+
+
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fs-xs: 0.5rem;
+  --fs-sm: .8rem;
+  --fs-nm: 1rem;
+  --fs-md: 1.5rem;
+  --fs-lg: 2.3rem;
+  --fs-xl: 3rem;
+  --fs-lg-pc: 4rem;
+
+
+
   scroll-behavior: smooth;
   --color-dark: #35203b;
   --color-primary: #500480;
@@ -80,6 +114,80 @@
     #35203b -118.5%,
     var(--color-primary) 100%
   );
+}
+
+/* 1.   Global variables ends */
+
+/**************************************/
+/**************************************/
+/**************************************/
+
+/* 2.   Basic resets */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Inter', sans-serif; */
+  transition: all 0.4s ease;
+  ;
+}
+
+body {
+  background-color: var(--body-color);
+  text-rendering: optimizeSpeed;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body.dark {
+  --body-color: #3e114e;
+  --nav-color: transparent;
+  --side-nav: #242526;
+  --primary-text-color: #DFDFDF;
+  --plain-color: #bfbbbb;
+  --clr-secondary: #df80ff;
+  --clr-footer-upper-shadow: #800080;
+  --clr-footer-lower-shadow: #270739;
+  --clr-contact-form: #e2c9f7;
+  --clr-service-list: #800080;
+  --clr-secondary-text: #cccccc;
+  --clr-about-gradient1: #df80ff;
+  --clr-about-gradient2: #610083;
+  --clr-about-gradient3: #3e114e;
+  --clr-paragraph: #DF80FF;
+  --clr-notable: #ffffff;
+  --clr-side-drawer: #270739e6;
+  --clr-testimonial: #df80ff47;
+}
+
+
+#scrolling-image {
+  display: none;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -206,6 +314,9 @@
   -webkit-backdrop-filter: blur(140px);
   pointer-events: none;
 }
+
+
+
 
 @layer base {
   * {

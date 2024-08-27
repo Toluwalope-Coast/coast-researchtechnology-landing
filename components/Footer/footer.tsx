@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./footer.module.css";
+import "./footer.css";
 import Image from "next/image";
 import {
   FacebookIcon,
@@ -12,10 +13,13 @@ import {
   PhoneIcon,
   Twitter,
 } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = () => {
+
   return (
-    <section className={`${styles.footer}`}>
+    <footer>
+     {/* <section className={`${styles.footer}`}>
       <div className="lg:px-20 lg:py-16 px-12 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-20 lg:gap-12 text-background">
           <div className={`${styles.footerGroup}`}>
@@ -180,6 +184,28 @@ export const Footer = () => {
           />
         </svg>
       </button>
-    </section>
+    </section>  */}
+        <div className="footer-content">
+          <ul className="footer-nav">
+            <li role="listitem"><Link href="/index">Home</Link></li>
+            <li role="listitem"><Link href="/about">About us</Link></li>
+            <li role="listitem"><Link href="/services">Services</Link></li>
+            <li role="listitem"><Link href="/career">Career</Link></li>
+            <li role="listitem"><Link href="/contact">Contact us</Link></li>
+            <li role="listitem"><Link href="#">Training</Link></li>
+            <li role="listitem"><Link href="#">Coast Craft</Link></li>
+          </ul>
+
+          <div className="social-icons">
+            <Link href="#"><FacebookIcon /></Link>
+            <Link href="#"><FaXTwitter /></Link>
+            <Link href="#"><InstagramIcon /></Link>
+            <Link href="#"><LinkedinIcon /></Link>
+          </div>
+
+          <p>&copy; 2024 All rights reserved</p>
+        </div>
+      </footer>
+    
   );
 };
