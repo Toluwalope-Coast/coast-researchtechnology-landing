@@ -8,9 +8,8 @@ import { useState, useMemo } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
-import { FaCaretDown } from "react-icons/fa"
-import "./navbar.css"
-
+import { FaCaretDown } from "react-icons/fa";
+import "./navbar.css";
 
 const navLinks = [
   {
@@ -156,7 +155,12 @@ export const Navbar: React.FC = () => {
         <div className="menu">
           <div className="menu-mobile-logo">
             <Link href="#" className="logo">
-              <Image src="/logoCoast.png" alt="Coast Logo" width={50} height={50} />
+              <Image
+                src="/logoCoast.png"
+                alt="Coast Logo"
+                width={50}
+                height={50}
+              />
               <span>CRT</span>
             </Link>
             <button>
@@ -165,32 +169,60 @@ export const Navbar: React.FC = () => {
           </div>
 
           <ul role="list" className="nav-links">
-            <li role="listitem" className="active-li"><Link className="link" href="/" title="Home Page">Home</Link>
+            <li role="listitem" className="active-li">
+              <Link className="link" href="/" title="Home Page">
+                Home
+              </Link>
             </li>
-            <li role="listitem" className="dropdown"><span className="dropbtn" title="About Coast Services">About
-              Us <FaCaretDown className="fas fa-caret-down" /></span>
+            <li role="listitem" className="dropdown">
+              <span className="dropbtn" title="About Coast Services">
+                About Us <FaCaretDown className="fas fa-caret-down" />
+              </span>
               <div className="dropdown-content">
-                <Link href="/about-us/our-vision" className="dropdownlink">Our Vision</Link>
-                <Link href="/about-us/our-mission" className="dropdownlink">Our Mission</Link>
+                <Link href="/about-us/our-vision" className="dropdownlink">
+                  Our Vision
+                </Link>
+                <Link href="/about-us/our-mission" className="dropdownlink">
+                  Our Mission
+                </Link>
               </div>
             </li>
-            <li role="listitem"><Link className="link" href="/services" title="Our Services">Services</Link>
+            <li role="listitem">
+              <Link className="link" href="/services" title="Our Services">
+                Services
+              </Link>
             </li>
-            <li role="listitem"><Link className="link" href="/career" title="Career page">Career</Link>
+            <li role="listitem">
+              <Link className="link" href="/career" title="Career page">
+                Career
+              </Link>
             </li>
-            <li role="listitem"><Link className="link" href="/contact" title="Contact Coast">Contact
-              Us</Link></li>
-            <li role="listitem"><Link className="link" href="#" title="Training at Coast">Training</Link></li>
-            <li role="listitem"><Link className="link" href="/coast-craft" title="coast-craft Blog">coast-craft</Link></li>
+            <li role="listitem">
+              <Link className="link" href="/contact" title="Contact Coast">
+                Contact Us
+              </Link>
+            </li>
+            <li role="listitem">
+              <Link className="link" href="/training" title="Training at Coast">
+                Training
+              </Link>
+            </li>
+            <li role="listitem">
+              <Link
+                className="link"
+                href="/coast-craft"
+                title="coast-craft Blog"
+              >
+                coast-craft
+              </Link>
+            </li>
           </ul>
         </div>
-
 
         <button className="theme-toggle">
           <Moon className="fa-solid fa-moon moon" />
           <Sun className="fa-solid fa-sun sun" />
         </button>
-
       </nav>
     </header>
   );
