@@ -5,6 +5,7 @@
   height: calc(100vh - 10vh);
   background-color: #f7f7f7;
   /* padding-top: 2rem; */
+  display: none;
 }
 
 .heroPage {
@@ -196,6 +197,7 @@
 .lead {
   width: min(66ch, 100%);
   font-size: 14px;
+  padding-inline: 1rem;
 }
 
 .servicesWrapper {
@@ -211,15 +213,6 @@
   gap: 2rem;
 }
 
-@media (max-width: 768px) {
-  .servicesCards {
-    flex-direction: column;
-  }
-
-  .services {
-    padding: 5rem 3rem;
-  }
-}
 
 .card {
   flex: 0 1 50%;
@@ -244,6 +237,8 @@
   color: var(--color-primary);
 }
 
+
+
 @media screen and (max-width: 1024px) {
   .services__cards {
     flex-direction: column;
@@ -259,6 +254,25 @@
   .cardHeading {
     font-size: 1.125rem;
   }
+}
+
+@media (max-width: 768px) {
+  .servicesCards {
+    flex-direction: column;
+  }
+
+  .services {
+    padding: 5rem 3rem;
+  }
+
+  .card {
+    align-self: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.cardBody {
+  text-align: justify;
+}
 }
 
 /* Testimonial Styling */

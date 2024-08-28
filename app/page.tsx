@@ -15,7 +15,7 @@ const Home: React.FC = () => {
     <main>
       {/* Hero Section Slider */}
       {/* <Slider /> */}
-      <HeroSectionSlider />
+      <HeroSectionSlider />1   
 
       {/* About Us Section */}
       <AboutSection />
