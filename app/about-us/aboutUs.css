@@ -25,6 +25,7 @@
   padding-inline: 1rem;
   font-weight: var(--fw-medium);
   padding: 1rem 2rem;
+  color: var(--primary-text-color);
 }
 
 .hero-space h1 {

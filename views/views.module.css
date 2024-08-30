@@ -14,7 +14,8 @@
   align-items: center;
   height: calc(100vh - 10vh);
   padding-left: 3rem;
-  position: relative; /* Added position relative to heroPage */
+  position: relative;
+  /* Added position relative to heroPage */
 }
 
 .textContent {
@@ -34,25 +35,36 @@
 }
 
 .textContent .btn {
-  background: #500480; /* Button Background Color */
-  color: #fff; /* Button Text Color */
-  padding: 0.75rem 1.5rem; /* Button Padding */
-  border: none; /* Remove default button border */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  background: #500480;
+  /* Button Background Color */
+  color: #fff;
+  /* Button Text Color */
+  padding: 0.75rem 1.5rem;
+  /* Button Padding */
+  border: none;
+  /* Remove default button border */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
 }
 
 .textContent .btn:hover {
-  background: #3c026d; /* Darken button background color on hover */
+  background: #3c026d;
+  /* Darken button background color on hover */
 }
 
 .sliderControls {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center align slider controls horizontally */
-  position: absolute; /* Position slider controls relative to heroPage */
-  bottom: 10px; /* Adjust as needed */
-  left: 50%; /* Move controls to the middle horizontally */
-  transform: translateX(-50%); /* Adjust to center controls */
+  justify-content: center;
+  /* Center align slider controls horizontally */
+  position: absolute;
+  /* Position slider controls relative to heroPage */
+  bottom: 10px;
+  /* Adjust as needed */
+  left: 50%;
+  /* Move controls to the middle horizontally */
+  transform: translateX(-50%);
+  /* Adjust to center controls */
 }
 
 .chevronBtn {
@@ -132,9 +144,7 @@
   }
 }
 
-**************************************************************************************************
-  ************************************************************************************************
-  .container {
+************************************************************************************************** ************************************************************************************************ .container {
   width: min(1280px, 100% - 2rem);
   padding-inline: 7rem;
 }
@@ -161,8 +171,8 @@
 .aboutHeading,
 .servicesHeading,
 .testimonialHeading {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-medium);
   text-transform: capitalize;
   color: var(--color-primary);
 }
@@ -217,6 +227,7 @@
 .card {
   flex: 0 1 50%;
 }
+
 .card:nth-of-type(2) {
   align-self: flex-end;
 }
@@ -238,6 +249,24 @@
 }
 
 
+@media (max-width: 768px) {
+  .servicesCards {
+    flex-direction: column;
+  }
+
+  .services {
+    padding: 5rem 3rem;
+  }
+
+  .aboutHeading,
+  .servicesHeading,
+  .testimonialHeading {
+    font-size: var(--fs-nm);
+  }
+
+
+}
+
 
 @media screen and (max-width: 1024px) {
   .services__cards {
@@ -251,28 +280,28 @@
   .cardBody {
     margin-block-end: 0.875rem;
   }
+
   .cardHeading {
     font-size: 1.125rem;
   }
-}
 
-@media (max-width: 768px) {
-  .servicesCards {
-    flex-direction: column;
-  }
-
-  .services {
-    padding: 5rem 3rem;
-  }
-
-  .card {
+  .card,
+  .card:nth-of-type(2) {
     align-self: center;
     text-align: center;
     margin-bottom: 3rem;
-}
-.cardBody {
-  text-align: justify;
-}
+  }
+
+
+  .cardBody {
+    text-align: justify;
+  }
+
+  .aboutHeading,
+  .servicesHeading,
+  .testimonialHeading {
+    font-size: var(--fs-md);
+  }
 }
 
 /* Testimonial Styling */
@@ -302,6 +331,7 @@
 .footerItem svg {
   margin-inline-end: 1rem;
 }
+
 .quotecardContent {
   flex-grow: 1;
   font-size: 0.875rem;

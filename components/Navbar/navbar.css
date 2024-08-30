@@ -23,10 +23,10 @@ header {
     justify-content: space-between;
   }
   
-  i.fa-solid.fa-bars-staggered.sidebarOpen {
+  .sidebarOpen {
     color: var(--primary-text-color);
     font-size: var(--fs-md);
-    padding: 5px;
+    /* padding: 5px; */
     cursor: pointer;
   }
   
@@ -78,7 +78,7 @@ header {
     mix-blend-mode: plus-lighter;
   }
   
-  i.fa-solid.fa-circle-xmark.siderbarClose {
+  .siderbarClose {
     cursor: pointer;
     font-size: var(--fs-md);
   }

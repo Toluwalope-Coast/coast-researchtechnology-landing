@@ -47,13 +47,12 @@
 
 .hero,
 .showcase {
-  color: var(--clr-primary-dark-purple);
   text-align: center;
   padding: 5rem;
   display: flex;
   align-content: center;
   flex-direction: row-reverse;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 
@@ -77,6 +76,7 @@
   color: var(--clr-paragraph);
   text-align: center;
   font-weight: var(--fw-bold);
+  margin-block: 1rem;
 }
 
 .hero-content img {
@@ -583,6 +583,12 @@ section.testimonials h2 {
 }
 
 @media (min-width: 780px) {
+
+  .hero,
+  .showcase {
+    justify-content: flex-start;
+  }
+
   .testimonial-slider {
     justify-content: center;
   }
