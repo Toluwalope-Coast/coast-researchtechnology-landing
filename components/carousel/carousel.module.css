@@ -1,0 +1,72 @@
+/* Carousel.module.css */
+
+.carouselContainer {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.slideContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.slideImage {
+    object-fit: cover;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.slideHead {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+}
+
+.slideText {
+    color: var(--primary-text-color);
+    font-size: var(--fs-nm);
+    font-weight: 500;
+    text-align: justify;
+}
+
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem;
+    background-color: var(--body-color);
+    color: var(--primary-text-color);
+    border-radius: 9999px;
+    border: 1px solid var(--primary-text-color);
+    cursor: pointer;
+}
+
+.arrowLeft {
+    left: 0.5rem;
+}
+
+.arrowRight {
+    right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .slideContainer {
+        flex-direction: row-reverse;
+    }
+
+    .slideImage {
+        max-width: 50%;
+    }
+}

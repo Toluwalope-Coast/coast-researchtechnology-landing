@@ -2,12 +2,40 @@ import React from "react";
 import AboutSection from "@/views/aboutSection";
 import ServicesSection from "@/views/servicesSection";
 import BlobApp from "@/views/bubblesBackground";
-import FlickityCarousel from "@/components/AllCarousel/LandingCarousel/FlickityCarousel";
 import HeroSectionSlider from "@/views/heroSlider";
 import TestimonialSection from "@/views/testimonialCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 
+import Carousel from "@/components/carousel/carousel";
+
 const Home: React.FC = () => {
+  const slides = [
+    {
+      image: "/tutorial.png",
+      h1: "Master tech skills effortlessly",
+      text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
+      Link: "www.coastresearchtechnology.com.ng",
+    },
+    {
+      image: "/companyhero.png",
+      h1: "Your Idea Journey Starts Now!",
+      text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
+      Link: "www.coastresearchtechnology.com.ng",
+    },
+    {
+      image: "/recruit.png",
+      h1: "Recruiting",
+      text: "Let’s help bridge the gap between your idea and your product, thereby providing solutions to many of your problems.",
+      Link: "www.coastresearchtechnology.com.ng",
+    },
+    {
+      image: "/craft.png",
+      h1: "Coast Craft",
+      text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
+      Link: "www.coastresearchtechnology.com.ng",
+    },
+  ];
+
   // const OPTIONS: EmblaOptionsType = { loop: true };
   // const SLIDE_COUNT = 8;
   // const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -17,7 +45,7 @@ const Home: React.FC = () => {
       {/* Hero Section Slider */}
       {/* <Slider /> */}
       {/* <HeroSectionSlider />1    */}
-      <FlickityCarousel />
+      <Carousel slides={slides} />
 
       {/* About Us Section */}
       <AboutSection />

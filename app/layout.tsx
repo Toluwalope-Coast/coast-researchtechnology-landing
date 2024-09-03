@@ -1,9 +1,8 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import "flickity/css/flickity.css";
 import { InternetCheck } from "@/utils";
 import { Footer } from "@/components/Footer/footer";
 import { Navbar } from "@/components/Navbar/navbar";

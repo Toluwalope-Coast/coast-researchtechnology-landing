@@ -1,0 +1,259 @@
+.techie {
+    /* margin-top: 3rem; */
+    background-image: radial-gradient(var(--clr-training-text-color)25%, var(--clr-training-primary) 70%);
+    /* background-image: radial-gradient(var(--clr-about-gradient1) 30%, var(--clr-secondary) 70%); */
+    position: relative;
+    overflow: hidden;
+}
+
+.coastTechie {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0;
+    width: 100%;
+}
+
+.coastTechie2 {
+    display: none;
+}
+
+.coastTech {
+    position: absolute;
+    top: 7rem;
+    left: 7rem;
+    max-width: 25%;
+    color: var(--plain-color);
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.coastTech span {
+    font-weight: 700;
+}
+
+.coastTechText {
+    color: var(--plain-color);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 12rem;
+    right: -14rem;
+    line-height: 1.2;
+}
+
+.coastTechText h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.coastTechText span {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.coastTechText p {
+    max-width: 50%;
+}
+
+.coastTechText {
+    top: 15rem;
+    right: -12rem;
+}
+
+.coastTechText h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.coastTechText span {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.coastTechText p {
+    max-width: 50%;
+}
+
+.techiePacks {
+    width: 100%;
+    position: relative;
+}
+
+
+.heroImagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70vw;
+    position: absolute;
+    bottom: 10rem;
+    right: 0;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.4px);
+    -webkit-backdrop-filter: blur(12.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.vrImage {
+    transition: transform 0.5s ease;
+}
+
+.vrImage:hover {
+    transform: translateY(-1.5rem);
+    opacity: 0.3;
+}
+
+.hoverText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.imageWrapper:hover .hoverText {
+    opacity: 1;
+}
+
+.welcome {
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+}
+
+.coastPacks {
+    position: relative;
+}
+
+@media (max-width: 1100px) {
+    .coastTechText {
+        right: -15rem;
+    }
+
+    .coastTechText h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    .coastTechText span {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    .coastTechText p {
+        max-width: 40%;
+    }
+
+    .vrImage {
+        width: 150px;
+    }
+
+    .heroImagesContainer {
+        bottom: 6rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .coastTech {
+        left: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .coastTechText {
+        top: 13rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .coastTechie {
+        padding-top: 5rem;
+    }
+
+    .coastTech {
+        top: 9rem;
+        left: 2rem;
+    }
+
+    .coastTechText {
+        top: 14rem;
+        right: -13rem;
+    }
+
+    .coastTechText h1 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .coastTechText span {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .coastTechText p {
+        max-width: 40%;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .heroImagesContainer {
+        width: 80%;
+    }
+
+    .hoverText {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroImagesContainer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .coastTech {
+        left: 4rem;
+        font-size: 1.5rem;
+        max-width: 15%;
+    }
+
+    .coastTechText {
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 120%);
+    }
+
+    .coastTechText h1 {
+        font-size: 2.5rem;
+    }
+
+    .coastTechText p {
+        max-width: 80%;
+    }
+
+    /* .coastTechText {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        z-index: ;
+    } */
+}
