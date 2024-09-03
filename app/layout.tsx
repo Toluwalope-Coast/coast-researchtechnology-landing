@@ -1,6 +1,9 @@
+import React from 'react';
+import Head from 'next/head';
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import "flickity/css/flickity.css";
 import { InternetCheck } from "@/utils";
 import { Footer } from "@/components/Footer/footer";
 import { Navbar } from "@/components/Navbar/navbar";
@@ -23,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <script src="/flickity.pkgd.min.js" async></script>
+      </Head>
       <body className={inter.className}>
         <Navbar />
         {children}

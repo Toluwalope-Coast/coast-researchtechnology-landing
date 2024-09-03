@@ -24,6 +24,7 @@
     "embla-carousel-auto-scroll": "^8.1.5",
     "embla-carousel-autoplay": "^8.1.5",
     "embla-carousel-react": "^8.1.5",
+    "flickity": "^3.0.0",
     "framer-motion": "^11.2.10",
     "lucide-react": "^0.359.0",
     "next": "14.1.0",
@@ -44,6 +45,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/flickity": "^2.2.11",
     "@types/jquery": "^3.5.29",
     "@types/node": "^20",
     "@types/react": "^18",

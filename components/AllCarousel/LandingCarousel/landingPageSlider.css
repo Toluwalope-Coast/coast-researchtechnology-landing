@@ -1,0 +1,13 @@
+.carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-cell {
+    width: 300px; /* Customize the width as needed */
+    height: 200px;
+    margin-right: 10px;
+    background: #eee;
+    border-radius: 5px;
+  }
+  
