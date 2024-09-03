@@ -68,5 +68,6 @@
 
     .slideImage {
         max-width: 50%;
+        height: 100vh;
     }
 }

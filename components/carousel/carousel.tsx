@@ -8,6 +8,7 @@ import Image from "next/image";
 
 interface Slide {
   image: string;
+  heading: string;
   text: string;
 }
 
@@ -51,7 +52,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                 height={1000}
               />
               <div>
-                <h1 className={styles.slideHead}>{slide.h1}</h1>
+                <h1 className={styles.slideHead}>{slide.heading}</h1>
                 <div className={styles.slideText}>{slide.text}</div>
               </div>
             </div>

@@ -12,25 +12,25 @@ const Home: React.FC = () => {
   const slides = [
     {
       image: "/tutorial.png",
-      h1: "Master tech skills effortlessly",
+      heading: "Master tech skills effortlessly",
       text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
       Link: "www.coastresearchtechnology.com.ng",
     },
     {
       image: "/companyhero.png",
-      h1: "Your Idea Journey Starts Now!",
+      heading: "Your Idea Journey Starts Now!",
       text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
       Link: "www.coastresearchtechnology.com.ng",
     },
     {
       image: "/recruit.png",
-      h1: "Recruiting",
+      heading: "Recruiting",
       text: "Let’s help bridge the gap between your idea and your product, thereby providing solutions to many of your problems.",
       Link: "www.coastresearchtechnology.com.ng",
     },
     {
       image: "/craft.png",
-      h1: "Coast Craft",
+      heading: "Coast Craft",
       text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
       Link: "www.coastresearchtechnology.com.ng",
     },
