@@ -1,0 +1,60 @@
+.carouselContainer {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.slideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-inline: 1rem;
+    background-color: blueviolet;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.slideImage {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+
+.slideName {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+
+.slideText {
+    color: var(--primary-text-color);
+    font-size: var(--fs-nm);
+    font-weight: 500;
+    text-align: justify;
+}
+
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem;
+    background-color: var(--body-color);
+    color: var(--primary-text-color);
+    border-radius: 9999px;
+    border: 1px solid var(--primary-text-color);
+    cursor: pointer;
+}
+
+.arrowLeft {
+    left: 0.5rem;
+}
+
+.arrowRight {
+    right: 0.5rem;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}

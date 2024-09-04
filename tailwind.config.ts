@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -6,11 +7,12 @@ const config = {
   './app/**/*.{js,ts,jsx,tsx}'],
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./node_modules/@nextui-org/theme/dist/components/(modal|scroll-shadow).js"
+  ],
   prefix: "",
   theme: {
     container: {
@@ -79,7 +81,7 @@ const config = {
     variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [nextui()],
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config

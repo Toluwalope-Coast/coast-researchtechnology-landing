@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./training.module.css";
 import Image from "next/image";
-import Carousel from "@/components/carousel/carousel";
+import Carousel from "@/components/AllCarousel/HeroCarousel/carousel";
 import Link from "next/link";
 
 const slides = [

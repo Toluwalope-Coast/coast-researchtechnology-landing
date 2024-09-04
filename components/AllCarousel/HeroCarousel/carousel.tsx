@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import styles from "./Carousel.module.css";
+import styles from "./carousel.module.css";
 import Image from "next/image";
 
 interface Slide {
@@ -51,7 +51,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                 width={1000}
                 height={1000}
               />
-              <div>
+              <div className={styles.slideContent}>
                 <h1 className={styles.slideHead}>{slide.heading}</h1>
                 <div className={styles.slideText}>{slide.text}</div>
               </div>

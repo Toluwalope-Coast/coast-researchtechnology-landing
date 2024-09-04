@@ -1,9 +1,10 @@
 export interface ISlide {
   id: string;
-  h1: string;
-  p: string;
+  heading: string;
+  text: string;
   Link: string;
-  url: string;
+  url?: string;
+  image: string;
 }
 
 export interface ICarouselItem {
@@ -18,8 +19,8 @@ export interface ICarouselProps {
 
 export interface ITestimonialData {
   id: string;
-  position: number;
-  imageSrc: string;
+  position?: number;
+  image: string;
   text: string;
   name: string;
   isActive?: boolean;
