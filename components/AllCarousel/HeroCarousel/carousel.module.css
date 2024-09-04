@@ -69,6 +69,7 @@
         max-width: 50%;
         height: 90vh;
         margin-block-end: 2rem;
+        transform: translateX(2rem);
     }
 
     .slideContent {
@@ -84,7 +85,7 @@
 
 @media (min-width: 1024px) {
     .slideText {
-        font-size: var(--fs-md);
+        font-size: 1.2rem;
         text-align: left;
     }
 }

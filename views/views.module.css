@@ -191,7 +191,7 @@
   align-items: center;
   justify-content: center;
   background: #fff;
-  height: 100vh;
+  padding-block: 3rem;
 }
 
 .aboutContent {

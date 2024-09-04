@@ -20,13 +20,13 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
   const sliderRef = useRef<Slider>(null);
 
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,

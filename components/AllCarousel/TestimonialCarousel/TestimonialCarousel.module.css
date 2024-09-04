@@ -11,9 +11,13 @@
     justify-content: center;
     gap: 1rem;
     margin-inline: 1rem;
-    background-color: blueviolet;
-    border-radius: 1rem;
     padding: 1rem;
+    background: var(--clr-testimonial);
+    backdrop-filter: blur(2rem);
+    color: var(--primary-text-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-block: 1rem 4rem;
 }
 
 .slideImage {
@@ -30,7 +34,7 @@
 
 .slideText {
     color: var(--primary-text-color);
-    font-size: var(--fs-nm);
+    font-size: var(--fs-sm);
     font-weight: 500;
     text-align: justify;
 }
@@ -55,6 +59,11 @@
     right: 0.5rem;
 }
 
-@media (min-width: 768px) {}
+/* @media (min-width: 768px) {} */
 
-@media (min-width: 1024px) {}
+/* @media (min-width: 1024px) {} */
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 0px;
+}
