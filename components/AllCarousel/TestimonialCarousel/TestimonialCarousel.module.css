@@ -53,16 +53,24 @@
 }
 
 .arrowLeft {
-    left: 0.5rem;
+    left: -1rem;
 }
 
 .arrowRight {
-    right: 0.5rem;
+    right: -1rem;
 }
 
 @media (min-width: 768px) {
     .slideContainer {
         padding: 3rem 1rem;
+    }
+
+    .arrowLeft {
+        left: -2rem;
+    }
+
+    .arrowRight {
+        right: -2rem;
     }
 }
 
