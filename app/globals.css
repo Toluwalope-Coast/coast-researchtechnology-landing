@@ -135,8 +135,10 @@
   --clr-testimonial: #ffffff80;
 
 
-  --clr-training-primary: #590366;
-  --clr-training-text-color: #C41DFF;
+
+  --clr-training-gradient: radial-gradient(#d9d9d9 25%, #808080 70%);
+
+  --clr-hero-services: #610083;
 
 
 
@@ -216,6 +218,10 @@ body.dark {
   --clr-notable: #ffffff;
   --clr-side-drawer: #270739e6;
   --clr-testimonial: #df80ff47;
+
+  --clr-hero-services: #000;
+
+  --clr-training-gradient: radial-gradient(#C41DFF 25%, #590366 70%);
 }
 
 

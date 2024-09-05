@@ -11,7 +11,7 @@ const config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./node_modules/@nextui-org/theme/dist/components/(modal|scroll-shadow).js"
+    "./node_modules/@nextui-org/theme/dist/components/(modal|popover|scroll-shadow|button|ripple|spinner).js"
   ],
   prefix: "",
   theme: {

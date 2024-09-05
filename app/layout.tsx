@@ -6,6 +6,7 @@ import "./globals.css";
 import { InternetCheck } from "@/utils";
 import { Footer } from "@/components/Footer/footer";
 import { Navbar } from "@/components/Navbar/navbar";
+import { ThemeProvider } from "@/utils/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 // const poppins = Poppin({
@@ -29,10 +30,17 @@ export default function RootLayout({
         <script src="/flickity.pkgd.min.js" async></script>
       </Head>
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <InternetCheck />
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+          <InternetCheck />
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

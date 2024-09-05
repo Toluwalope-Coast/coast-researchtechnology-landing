@@ -30,6 +30,7 @@
 .slideHead {
     font-size: var(--fs-md);
     font-weight: var(--fw-bold);
+    color: #000;
 }
 
 .slideText {

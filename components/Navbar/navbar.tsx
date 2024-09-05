@@ -4,12 +4,20 @@
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-import { Menu, Moon, Sun, X } from "lucide-react";
+// import { motion, AnimatePresence } from "framer-motion";
+import { Menu, Moon, MoonIcon, Sun, X } from "lucide-react";
 import { FaCaretDown } from "react-icons/fa";
 import "./navbar.css";
+
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+} from "@nextui-org/react";
 
 const navLinks = [
   {
@@ -42,6 +50,7 @@ const NavLink: React.FC<{ href: string; label: string }> = ({
 export const Navbar: React.FC = () => {
   const [animationParent] = useAutoAnimate();
   const [showMenu, setShowMenu] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => setShowMenu(!showMenu);
 
@@ -53,8 +62,26 @@ export const Navbar: React.FC = () => {
     []
   );
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const isDark = savedTheme === "dark";
+    if (isDark) {
+      document.body.classList.add("dark");
+    }
+    setIsDarkMode(isDark);
+  }, []);
+
+  const toggleTheme = () => {
+    document.body.classList.toggle("dark");
+    const currentTheme = document.body.classList.contains("dark")
+      ? "dark"
+      : "light";
+    localStorage.setItem("theme", currentTheme);
+    setIsDarkMode(currentTheme === "dark"); // Update state based on the theme
+  };
+
   return (
-    <header className={`${showMenu? 'active' : ''}`}>
+    <header className={`${showMenu ? "active" : ""}`}>
       <nav className="nav-bar">
         {/* Menu hamburger */}
         <button onClick={toggleMenu}>
@@ -78,7 +105,10 @@ export const Navbar: React.FC = () => {
               <span>CRT</span>
             </Link>
             <button>
-              <X className="fa-solid fa-circle-xmark siderbarClose" onClick={toggleMenu} />
+              <X
+                className="fa-solid fa-circle-xmark siderbarClose"
+                onClick={toggleMenu}
+              />
             </button>
           </div>
 
@@ -88,18 +118,31 @@ export const Navbar: React.FC = () => {
                 Home
               </Link>
             </li>
-            <li role="listitem" className="dropdown">
-              <span className="dropbtn" title="About Coast Services">
-                About Us <FaCaretDown className="fas fa-caret-down" />
-              </span>
-              <div className="dropdown-content">
-                <Link href="/about-us/our-vision" className="dropdownlink">
-                  Our Vision
-                </Link>
-                <Link href="/about-us/our-mission" className="dropdownlink">
-                  Our Mission
-                </Link>
-              </div>
+            <li role="listitem">
+              <Dropdown>
+                <DropdownTrigger>
+                  <Button title="Career page" variant="bordered">
+                    About Us <FaCaretDown className="fas fa-caret-down" />
+                  </Button>
+                </DropdownTrigger>
+                <DropdownMenu
+                  aria-label="Static Actions"
+                  className="bg-[#610083] text-white"
+                >
+                  <DropdownItem
+                    href="/about-us/our-vision"
+                    className="hover:bg-white hover:text-[#610083]"
+                  >
+                    Our Vision
+                  </DropdownItem>
+                  <DropdownItem
+                    href="/about-us/our-mission"
+                    className="hover:bg-white hover:text-[#610083]"
+                  >
+                    Our Mission
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
             </li>
             <li role="listitem">
               <Link className="link" href="/services" title="Our Services">
@@ -133,9 +176,12 @@ export const Navbar: React.FC = () => {
           </ul>
         </div>
 
-        <button className="theme-toggle">
-          <Moon className="fa-solid fa-moon moon" />
-          <Sun className="fa-solid fa-sun sun" />
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {isDarkMode ? (
+            <Sun className="fa-solid fa-sun sun" />
+          ) : (
+            <Moon className="fa-solid fa-moon moon text-gray-600" />
+          )}
         </button>
       </nav>
     </header>

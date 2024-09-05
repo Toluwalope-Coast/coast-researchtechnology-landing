@@ -31,14 +31,14 @@ const page = () => {
           className={style.coastTechie}
           priority={true}
         />
-        {/* <Image
+        <Image
           src="/coast-segun.png"
           alt="coast-tech individual"
           width={1000}
           height={1000}
           className={style.coastTechie2}
           priority={true}
-        /> */}
+        />
         <p className={style.coastTech}>
           Do you want <span>COASTECH</span> to your name?
         </p>

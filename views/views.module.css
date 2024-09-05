@@ -174,7 +174,7 @@
   font-size: var(--fs-lg);
   font-weight: var(--fw-medium);
   text-transform: capitalize;
-  color: var(--color-primary);
+  color: var(--clr-hero-services);
 }
 
 .aboutHeading .graphic,
@@ -208,6 +208,7 @@
   width: min(66ch, 100%);
   font-size: 14px;
   padding-inline: 1rem;
+  color: var(--clr-hero-services);
 }
 
 .servicesWrapper {
@@ -235,17 +236,19 @@
 .cardHeader {
   width: 100%;
   margin-block-end: 1rem;
+  color: var(--clr-hero-services);
 }
 
 .cardBody {
   max-width: 45ch;
   margin-block-end: 2rem;
+  color: var(--primary-text-color);
 }
 
 .cardHeading {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--clr-hero-services);
 }
 
 

@@ -1,9 +1,9 @@
 .techie {
-    /* margin-top: 3rem; */
-    background-image: radial-gradient(var(--clr-training-text-color)25%, var(--clr-training-primary) 70%);
-    /* background-image: radial-gradient(var(--clr-about-gradient1) 30%, var(--clr-secondary) 70%); */
+    background-image: var(--clr-training-gradient);
     position: relative;
     overflow: hidden;
+    margin-block-start: 4.5rem;
+    color: var(--clr-notable);
 }
 
 .coastTechie {
@@ -20,8 +20,8 @@
 
 .coastTech {
     position: absolute;
-    top: 7rem;
-    left: 7rem;
+    top: 5rem;
+    left: 3rem;
     max-width: 25%;
     color: var(--plain-color);
     font-weight: 300;
@@ -181,9 +181,9 @@
 }
 
 @media (max-width: 950px) {
-    .coastTechie {
+    /* .techie {
         padding-top: 5rem;
-    }
+    } */
 
     .coastTech {
         top: 9rem;
@@ -229,19 +229,32 @@
     }
 
     .coastTech {
+        top: 2rem;
         left: 4rem;
         font-size: 1.5rem;
         max-width: 15%;
     }
 
+    .coastTechie {
+        display: none;
+    }
+
+    .coastTechie2 {
+        display: flex;
+    }
+
     .coastTechText {
         bottom: 50%;
         left: 50%;
-        transform: translate(-50%, 120%);
+        transform: translate(-50%, 140%);
     }
 
     .coastTechText h1 {
         font-size: 2.5rem;
+    }
+
+    .coastTechText span {
+        font-size: 3rem;
     }
 
     .coastTechText p {
@@ -257,4 +270,84 @@
         top: 0;
         z-index: ;
     } */
+}
+
+@media (max-width: 640px) {
+    .coastTech {
+        left: 2rem;
+    }
+
+    .heroImagesContainer {
+        justify-content: space-around;
+    }
+
+    .vrImage:hover {
+        transform: translateY(-1.2rem);
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 545px) {
+    .coastTech {
+        max-width: 26%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .coastTech {
+        max-width: 23%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .coastTechText h1 {
+        font-size: 2rem;
+    }
+
+    .coastTechText span {
+        font-size: 2rem;
+    }
+
+    .coastTechText p {
+        max-width: 80%;
+    }
+
+    .vrImage {
+        width: 80px;
+    }
+
+    .hoverText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .coastTech {
+        top: 3rem;
+        font-size: 0.8rem;
+        max-width: 18%;
+    }
+
+    .coastTechText h1 {
+        font-size: 1.4rem;
+    }
+
+    .coastTechText span {
+        font-size: 1.6rem;
+    }
+
+    .coastTechText p {
+        font-size: .7rem;
+        max-width: 70%;
+    }
+
+    .vrImage {
+        width: 60px;
+    }
+
+    .hoverText {
+        font-size: 12px;
+    }
+
 }

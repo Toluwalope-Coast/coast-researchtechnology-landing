@@ -11,7 +11,7 @@
     justify-content: center;
     gap: 1rem;
     margin-inline: 1rem;
-    padding: 1.5rem 1rem;
+    padding: 3rem 1rem;
     background: var(--clr-testimonial);
     backdrop-filter: blur(2rem);
     color: var(--primary-text-color);
@@ -60,11 +60,7 @@
     right: 0.5rem;
 }
 
-@media (min-width: 768px) {
-    .slideContainer {
-        padding: 3rem 1rem;
-    }
-}
+/* @media (min-width: 768px) {} */
 
 /* @media (min-width: 1024px) {} */
 
