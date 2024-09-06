@@ -60,6 +60,10 @@
     right: -1rem;
 }
 
+.readReviews {
+    color: red;
+}
+
 @media (min-width: 768px) {
     .slideContainer {
         padding: 3rem 1rem;

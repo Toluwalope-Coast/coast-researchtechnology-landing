@@ -22,6 +22,7 @@ export interface ITestimonialData {
   position?: number;
   image: string;
   text: string;
+  url: string;
   name: string;
   isActive?: boolean;
   height?: number; // Define height prop

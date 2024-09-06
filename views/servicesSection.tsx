@@ -41,10 +41,7 @@ const ServicesSection = () => {
                   </li>
                 </ul>
               </div>
-              <Link
-                href="https://coastresearchtechnology1.netlify.app"
-                className="btn btn--primary"
-              >
+              <Link href="/services" className="btn btn--primary">
                 Read More
               </Link>
             </div>
@@ -71,10 +68,7 @@ const ServicesSection = () => {
                   </li>
                 </ul>
               </div>
-              <Link
-                href="https://coastresearchtechnology2.netlify.app"
-                className="btn btn--primary"
-              >
+              <Link href="/services" className="btn btn--primary">
                 Read More
               </Link>
             </div>
@@ -100,10 +94,7 @@ const ServicesSection = () => {
                   </li>
                 </ul>
               </div>
-              <Link
-                href="https://coastresearchtechnology1.netlify.app"
-                className="btn btn--primary"
-              >
+              <Link href="/services" className="btn btn--primary">
                 Read More
               </Link>
             </div>
@@ -130,10 +121,7 @@ const ServicesSection = () => {
                   </li>
                 </ul>
               </div>
-              <Link
-                href="https://coastresearchtechnology2.netlify.app"
-                className="btn btn--primary"
-              >
+              <Link href="/services" className="btn btn--primary">
                 Read More
               </Link>
             </div>

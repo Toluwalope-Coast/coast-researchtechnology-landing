@@ -228,7 +228,7 @@ header.active .nav-bar .Logo {
     padding-top: 1rem;
     background: transparent;
     backdrop-filter: none;
-    gap: 2rem;
+    gap: 1rem;
     font-size: var(--fs-sm);
   }
 
