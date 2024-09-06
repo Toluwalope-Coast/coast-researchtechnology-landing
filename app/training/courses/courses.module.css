@@ -1,0 +1,53 @@
+.heroSection {
+    background-image: var(--clr-training-gradient);
+    position: relative;
+    overflow: hidden;
+    margin-block-start: 4.5rem;
+    color: var(--clr-notable);
+    height: calc(100vh - 4.5rem);
+    width: 100%;
+}
+
+.heroSectionImage {
+    width: 100%;
+    mix-blend-mode: soft-light;
+    /* position: relative; */
+    margin-top: -10%;
+}
+
+.heroSectionVRImage {
+    height: auto;
+    width: 50%;
+    mix-blend-mode: hard-light;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 10%;
+}
+
+.heroSectionContent {
+    position: absolute;
+    top: 20%;
+    right: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.heroSectionContent h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: 40%;
+    line-height: 1;
+}
+
+.heroSectionContent p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    max-width: 40%;
+    padding-top: 1rem;
+}

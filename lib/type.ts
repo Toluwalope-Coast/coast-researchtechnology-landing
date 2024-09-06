@@ -30,3 +30,24 @@ export interface ITestimonialData {
 export interface ITestimonialsProps {
   testimonials: ITestimonialData[];
 }
+
+export interface ITeamData {
+  id: string;
+  image: string;
+  position: string;
+  name: string;
+}
+
+export interface ITeamProps {
+  team: ITeamData[];
+}
+
+export interface IReviewsData {
+  id: string;
+  image: string;
+  text: string;
+}
+
+export interface IReviewsProps {
+  reviews: IReviewsData[];
+}

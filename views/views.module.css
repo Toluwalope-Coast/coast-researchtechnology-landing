@@ -190,7 +190,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: var(--clr-about-wrapper);
   padding-block: 3rem;
 }
 

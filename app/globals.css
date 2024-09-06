@@ -55,6 +55,7 @@
     --clr-secondary-text: #717171;
     --plain-color: #ffffff;
     --clr-secondary: #808080;
+    --clr-about-wrapper: #ffffff;
     --clr-footer-upper-shadow: #717171;
     --clr-footer-lower-shadow: #ffffff;
     --clr-contact-form: #ffffff;
@@ -103,6 +104,7 @@
     --primary-text-color: #DFDFDF;
     --plain-color: #bfbbbb;
     --clr-secondary: #df80ff;
+    --clr-about-wrapper: #df80ff;
     --clr-footer-upper-shadow: #800080;
     --clr-footer-lower-shadow: #270739;
     --clr-contact-form: #e2c9f7;
@@ -125,6 +127,7 @@
   --side-nav: #BFBBBB;
   --primary-text-color: #610083;
   --clr-secondary-text: #717171;
+  --clr-about-wrapper: #ffffff;
   --plain-color: #ffffff;
   --clr-secondary: #808080;
   --clr-footer-upper-shadow: #717171;

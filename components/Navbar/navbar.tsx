@@ -2,12 +2,10 @@
 
 "use client";
 import Link from "next/link";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
-// import { motion, AnimatePresence } from "framer-motion";
-import { Menu, Moon, MoonIcon, Sun, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
 import { FaCaretDown } from "react-icons/fa";
 import "./navbar.css";
 
@@ -19,33 +17,73 @@ import {
   Button,
 } from "@nextui-org/react";
 
-const navLinks = [
+// Define the type for navigation links
+interface NavLinkData {
+  href: string;
+  label: string;
+  submenu?: NavLinkData[]; // Optional submenu for dropdowns
+}
+
+// Define the data for the navigation links, including submenus
+const navLinks: NavLinkData[] = [
+  { href: "/", label: "Home" },
   {
-    label: "Home",
-    href: "#",
+    href: "",
+    label: "About Us",
+    submenu: [
+      { href: "/about-us/our-vision", label: "Our Vision" },
+      { href: "/about-us/our-mission", label: "Our Mission" },
+    ],
   },
+  { href: "/contact", label: "Contact Us" },
+  { href: "/services", label: "Services" },
+  { href: "/career", label: "Career" },
   {
-    label: "About",
-    href: "#",
+    href: "/training",
+    label: "Training",
+    submenu: [
+      { href: "/training/courses", label: "Courses" },
+      { href: "#", label: "Admission" },
+    ],
   },
-  {
-    label: "Services",
-    href: "#",
-  },
-  {
-    label: "Contact",
-    href: "#",
-  },
+  { href: "/coast-craft", label: "Coast Craft" },
 ];
 
-const NavLink: React.FC<{ href: string; label: string }> = ({
-  href,
-  label,
-}) => (
-  <Link href={href} className="hover:opacity-70">
-    {label}
-  </Link>
-);
+// Component for individual navigation links or dropdown triggers
+const NavLink: React.FC<{ link: NavLinkData }> = ({ link }) => {
+  if (link.submenu) {
+    return (
+      <Dropdown>
+        <DropdownTrigger>
+          <Button variant="bordered">
+            {link.label} <FaCaretDown className="ml-1" />
+          </Button>
+        </DropdownTrigger>
+        <DropdownMenu
+          aria-label={`${link.label} Submenu`}
+          className="bg-[#610083] text-white"
+        >
+          {link.submenu.map((sublink, index) => (
+            <DropdownItem
+              key={index}
+              as="a"
+              href={sublink.href}
+              className="hover:bg-white hover:text-[#610083]"
+            >
+              {sublink.label}
+            </DropdownItem>
+          ))}
+        </DropdownMenu>
+      </Dropdown>
+    );
+  }
+
+  return (
+    <Link href={link.href} className="hover:opacity-70">
+      {link.label}
+    </Link>
+  );
+};
 
 export const Navbar: React.FC = () => {
   const [animationParent] = useAutoAnimate();
@@ -57,7 +95,9 @@ export const Navbar: React.FC = () => {
   const renderedNavLinks = useMemo(
     () =>
       navLinks.map((link, index) => (
-        <NavLink key={index} href={link.href} label={link.label} />
+        <li key={index} role="listitem">
+          <NavLink link={link} />
+        </li>
       )),
     []
   );
@@ -113,66 +153,7 @@ export const Navbar: React.FC = () => {
           </div>
 
           <ul role="list" className="nav-links" onClick={toggleMenu}>
-            <li role="listitem" className="active-li">
-              <Link className="link" href="/" title="Home Page">
-                Home
-              </Link>
-            </li>
-            <li role="listitem">
-              <Dropdown>
-                <DropdownTrigger>
-                  <Button title="Career page" variant="bordered">
-                    About Us <FaCaretDown className="fas fa-caret-down" />
-                  </Button>
-                </DropdownTrigger>
-                <DropdownMenu
-                  aria-label="Static Actions"
-                  className="bg-[#610083] text-white"
-                >
-                  <DropdownItem
-                    href="/about-us/our-vision"
-                    className="hover:bg-white hover:text-[#610083]"
-                  >
-                    Our Vision
-                  </DropdownItem>
-                  <DropdownItem
-                    href="/about-us/our-mission"
-                    className="hover:bg-white hover:text-[#610083]"
-                  >
-                    Our Mission
-                  </DropdownItem>
-                </DropdownMenu>
-              </Dropdown>
-            </li>
-            <li role="listitem">
-              <Link className="link" href="/services" title="Our Services">
-                Services
-              </Link>
-            </li>
-            <li role="listitem">
-              <Link className="link" href="/career" title="Career page">
-                Career
-              </Link>
-            </li>
-            <li role="listitem">
-              <Link className="link" href="/contact" title="Contact Coast">
-                Contact Us
-              </Link>
-            </li>
-            <li role="listitem">
-              <Link className="link" href="/training" title="Training at Coast">
-                Training
-              </Link>
-            </li>
-            <li role="listitem">
-              <Link
-                className="link"
-                href="/coast-craft"
-                title="coast-craft Blog"
-              >
-                coast-craft
-              </Link>
-            </li>
+            {renderedNavLinks}
           </ul>
         </div>
 

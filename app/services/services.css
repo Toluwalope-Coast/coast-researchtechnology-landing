@@ -237,25 +237,6 @@
   justify-content: center;
 }
 
-section.testimonials,
-section.teams {
-  text-align: center;
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 50rem;
-  margin: auto;
-  margin-block: 2rem;
-}
-
-section.teams {
-  margin-top: 10rem;
-}
-
-.carousel {
-  margin-top: 2rem;
-}
-
 section.testimonials h2 {
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
@@ -504,7 +485,7 @@ section.testimonials {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 50rem;
+  max-width: 70rem;
   margin: auto;
   margin-block: 2rem;
   color: var(--primary-text-color);
@@ -654,6 +635,7 @@ section.testimonials h2 {
     overflow-x: hidden;
     overflow-y: auto;
     transform-style: preserve-3d;
+    scrollbar-width: none;
   }
 
   .parallax__layer {

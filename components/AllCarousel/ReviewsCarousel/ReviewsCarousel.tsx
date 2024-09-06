@@ -2,31 +2,53 @@
 
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import styles from "./TeamCarousel.module.css";
+import { FaArrowLeft, FaArrowRight, FaQuoteLeft } from "react-icons/fa";
+import styles from "./TestimonialCarousel.module.css";
 import Image from "next/image";
 
 interface Slide {
   image: string;
-  position: string;
-  name: string;
+  text: string;
 }
 
-interface ITeamProps {
+interface IReviewsProps {
   slides: Slide[];
 }
 
-const TeamCarousel: React.FC<ITeamProps> = ({ slides }) => {
+const ReviewsCarousel: React.FC<IReviewsProps> = ({ slides }) => {
   const sliderRef = useRef<Slider>(null);
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const nextSlide = () => {
@@ -50,9 +72,9 @@ const TeamCarousel: React.FC<ITeamProps> = ({ slides }) => {
                 width={1000}
                 height={1000}
               />
+              <FaQuoteLeft className={styles.quote} />
               <div className={styles.slideContent}>
-                <h3 className={styles.slidePos}>{slide.position}</h3>
-                <div className={styles.slideName}>NAME: {slide.name}</div>
+                <div className={styles.slideText}>{slide.text}</div>
               </div>
             </div>
           </div>
@@ -75,4 +97,4 @@ const TeamCarousel: React.FC<ITeamProps> = ({ slides }) => {
   );
 };
 
-export default TeamCarousel;
+export default ReviewsCarousel;

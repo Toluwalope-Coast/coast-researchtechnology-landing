@@ -5,7 +5,7 @@
 .hero-hold {
   display: flex;
   flex-direction: column-reverse;
-  position: relative;
+  /* position: relative; */
   background: rgb(217, 217, 217);
   background: radial-gradient(circle, var(--clr-about-gradient1) 0%, var(--clr-about-gradient2) 58%, var(--clr-about-gradient3) 75%);
 }
@@ -24,13 +24,14 @@
   text-align: justify;
   padding-inline: 1rem;
   font-weight: var(--fw-medium);
-  padding: 1rem 2rem;
+  padding: 1rem;
   color: var(--primary-text-color);
 }
 
 .hero-space h1 {
-  font-size: var(--fs-md);
+  font-size: var(--fs-lg);
   font-weight: var(--fw-bold);
+  text-align: center;
 }
 
 .read-more-btn {
@@ -233,7 +234,8 @@
 .coreValues h2 {
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
-  padding-bottom: 1rem;
+  padding-block: 1rem;
+  text-align: center;
 }
 
 .justify-text {
@@ -310,6 +312,7 @@ section.teams {
     height: 200px;
   }
 
+
   .coreValues {
     display: flex;
     padding: 5rem;
@@ -350,6 +353,7 @@ section.teams {
   .hero-space h1 {
     font-size: 4rem;
     font-weight: var(--fw-bold);
+    text-align: left;
   }
 
   .item1 img {

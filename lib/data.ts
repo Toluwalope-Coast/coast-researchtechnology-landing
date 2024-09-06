@@ -1,4 +1,10 @@
-import { ICarouselItem, ISlide, ITestimonialData } from "./type";
+import {
+  ICarouselItem,
+  ISlide,
+  ITestimonialData,
+  ITeamData,
+  IReviewsData,
+} from "./type";
 
 export const slides: ISlide[] = [
   {
@@ -66,5 +72,60 @@ export const testimonial: ITestimonialData[] = [
     image: "/segun_joseph.png",
     name: "Segun Joseph",
     text: "A friend recommend them to me and I have not been disappointed, very accurate, Coast Research Technology is the best for you, I am recommending them to you and a trial will convince you. Kudos to the tech team, God bless you and more wisdom.",
+  },
+];
+
+export const team: ITeamData[] = [
+  {
+    id: "1",
+    image: "/coast-segun-dup.png",
+    position: "Tech lead",
+    name: "Toluwalope Coast",
+  },
+  {
+    id: "1",
+    image: "/coast-segun-dup.png",
+    position: "moblie-app developer",
+    name: "Ibrahim Al-amin",
+  },
+  {
+    id: "1",
+    image: "/coast-segun-dup.png",
+    position: "front-end developer",
+    name: "Adeleke Segun",
+  },
+  {
+    id: "1",
+    image: "/coast-segun-dup.png",
+    position: "full stack developer",
+    name: "Balogun Abimbola",
+  },
+];
+
+export const reviews: IReviewsData[] = [
+  {
+    id: "1",
+    image: "/Professional dark head.png",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi iusto dolor facilis, natus asperiores vero, libero aut ipsam fugit voluptas quibusdam repellendus dolorum eum molestiae odio! Ipsam, dolore! Hic?",
+  },
+  {
+    id: "2",
+    image: "/Professional white head.png",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi iusto dolor facilis, natus asperiores vero, libero aut ipsam fugit voluptas quibusdam repellendus dolorum eum molestiae odio! Ipsam, dolore! Hic?",
+  },
+  {
+    id: "3",
+    image: "/coast-segun-dup.png",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi iusto dolor facilis, natus asperiores vero, libero aut ipsam fugit voluptas quibusdam repellendus dolorum eum molestiae odio! Ipsam, dolore! Hic?",
+  },
+  {
+    id: "4",
+    image: "/Professional dark head.png",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi iusto dolor facilis, natus asperiores vero, libero aut ipsam fugit voluptas quibusdam repellendus dolorum eum molestiae odio! Ipsam, dolore! Hic?",
+  },
+  {
+    id: "5",
+    image: "/segun_joseph.png",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi iusto dolor facilis, natus asperiores vero, libero aut ipsam fugit voluptas quibusdam repellendus dolorum eum molestiae odio! Ipsam, dolore! Hic?",
   },
 ];
