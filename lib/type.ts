@@ -5,6 +5,7 @@ export interface ISlide {
   Link: string;
   url?: string;
   image: string;
+  title?: string;
 }
 
 export interface ICarouselItem {

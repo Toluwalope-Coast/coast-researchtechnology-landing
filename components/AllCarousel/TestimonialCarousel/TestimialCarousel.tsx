@@ -87,7 +87,7 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
                   <h3 className={styles.slideName}>{slide.name}</h3>
                   <div className={styles.slideText}>
                     {truncateText(slide.text, 30)}
-                    <Link href="/services" className="readReviews">
+                    <Link href={slide.url} className="readReviews">
                       Read More
                     </Link>
                   </div>

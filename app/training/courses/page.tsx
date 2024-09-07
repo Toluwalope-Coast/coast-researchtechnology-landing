@@ -10,20 +10,22 @@ const CoursesPage = () => {
   return (
     <main>
       <section className={Styles.heroSection}>
-        <Image
-          src="/spiral.png"
-          alt="vision reality"
-          width={1000}
-          height={1000}
-          className={Styles.heroSectionImage}
-        />
-        <Image
-          src="/virtual-reality.png"
-          alt="vision reality"
-          width={200}
-          height={200}
-          className={Styles.heroSectionVRImage}
-        />
+        <div>
+          <Image
+            src="/spiral.webp"
+            alt="vision reality"
+            width={1000}
+            height={1000}
+            className={Styles.heroSectionImage}
+          />
+          <Image
+            src="/virtual-reality.webp"
+            alt="vision reality"
+            width={200}
+            height={200}
+            className={Styles.heroSectionVRImage}
+          />
+        </div>
         <div className={Styles.heroSectionContent}>
           <h1>Transform Your Future with Advanced Tech Training</h1>
           <p>
@@ -32,7 +34,7 @@ const CoursesPage = () => {
             skills and career potential. Dive into the future—start your journey
             today!
           </p>
-          <Button>
+          <Button className={Styles.button}>
             <Link href="#">Apply</Link>
           </Button>
         </div>
