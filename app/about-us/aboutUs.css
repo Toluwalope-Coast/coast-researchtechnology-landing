@@ -4,7 +4,7 @@
 
 .hero-hold {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   /* position: relative; */
   background: rgb(217, 217, 217);
   background: radial-gradient(circle, var(--clr-about-gradient1) 0%, var(--clr-about-gradient2) 58%, var(--clr-about-gradient3) 75%);

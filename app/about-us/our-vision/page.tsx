@@ -133,23 +133,26 @@ const OurVisionPage: React.FC = () => {
           <div className="coreVlue-text">
             <h2 className="toggle-h2">OUR CORE VALUES & CULTURE</h2>
             <p className="justify-text">
-              At Coast, our core values are the foundation of our identity,
-              guiding every decision we make and every action we take. These
-              values reflect our commitment to excellence, innovation, and
-              integrity in all our endeavors. They drive us to deliver
-              outstanding results and foster a positive impact on our clients,
-              employees, and the wider community.
+              At Coast Research Technology, we are driven by a commitment to
+              innovation and excellence, constantly seeking creative and
+              forward-looking solutions to address future needs and complex
+              challenges. We strive to deliver high-quality software
+              development, comprehensive training programs, and effective
+              recruitment services that empower businesses and individuals to
+              thrive in an ever-evolving digital landscape. Through our emphasis
+              on precision, we ensure a meticulous and accurate approach to
+              matching talent with opportunities, tailored to meet unique needs
+              and drive success.
             </p>
             <p className="justify-text">
-              In an age where technology plays a pivotal role in shaping the
-              future, it is essential to have a clear and unwavering set of
-              values that guide our journey. Our commitment to these core values
-              ensures that we remain true to our purpose, delivering innovative
-              solutions that meet the diverse needs of our clients while
-              contributing to the broader technological ecosystem. As we
-              continue to grow and evolve, these values will remain our guiding
-              light, helping us to build a sustainable, inclusive, and
-              forward-thinking organization that stands the test of time.
+              We believe in fostering growth and transformation by nurturing
+              talent and promoting a culture that values creativity,
+              collaboration, and practical problem-solving. Our mission is to
+              empower the next generation of tech professionals with the skills,
+              confidence, and support needed to excel in their careers. By
+              providing tailored solutions and strategic recruitment, we help
+              businesses and individuals achieve their full potential, driving
+              positive change and progress across the tech industry.
             </p>
             <button
               type="button"
