@@ -2,24 +2,24 @@ import React from "react";
 import style from "./training.module.css";
 import Image from "next/image";
 import Carousel from "@/components/AllCarousel/HeroCarousel/carousel";
-import { slides } from "@/lib/data";
 
 import Link from "next/link";
+import { slides } from "@/lib/data";
 
-const slides = [
-  {
-    image: "/lawal_abdulateef.png",
-    text: "Slide 1: This is the first slide description.",
-  },
-  {
-    image: "/segun_joseph.png",
-    text: "Slide 2: Here is some more text for the second slide.",
-  },
-  {
-    image: "/testimonial-1.jpg",
-    text: "Slide 3: And this is the third slide description.",
-  },
-];
+// const slides = [
+//   {
+//     image: "/lawal_abdulateef.png",
+//     text: "Slide 1: This is the first slide description.",
+//   },
+//   {
+//     image: "/segun_joseph.png",
+//     text: "Slide 2: Here is some more text for the second slide.",
+//   },
+//   {
+//     image: "/testimonial-1.jpg",
+//     text: "Slide 3: And this is the third slide description.",
+//   },
+// ];
 
 const page = () => {
   return (
@@ -124,7 +124,6 @@ const page = () => {
       {/* <section>
         <Carousel slides={slides} />
       </section> */}
-      <Carousel slides={slides} />
     </main>
   );
 };

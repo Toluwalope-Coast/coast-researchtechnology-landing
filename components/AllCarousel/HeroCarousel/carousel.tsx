@@ -8,7 +8,7 @@ import Image from "next/image";
 
 interface Slide {
   image: string;
-  heading: string;
+  heading?: string;
   text: string;
 }
 
