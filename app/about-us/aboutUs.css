@@ -19,7 +19,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+
   gap: 1rem;
   text-align: justify;
   padding-inline: 1rem;
@@ -243,6 +245,7 @@
 
   .hero-space p, .coreValues p {
     font-size: var(--fs-sm);
+    text-align: center;
   }
 
 .justify-text {
@@ -319,7 +322,6 @@ section.teams {
     height: 200px;
   }
 
-
   .coreValues {
     display: flex;
     padding: 5rem;
@@ -340,12 +342,14 @@ section.teams {
   
   .hero-space p, .coreValues p {
     font-size: var(--fs-nm);
+    text-align: left;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-hold {
     flex-direction: row-reverse;
+    align-items: flex-start;
     height: 90vh;
     gap: 2rem;
     overflow: hidden;
