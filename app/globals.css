@@ -260,6 +260,7 @@ html:focus-within {
 
 .primarySection {
   visibility: hidden;
+  font-size: 0;
 }
 
 .btn {
