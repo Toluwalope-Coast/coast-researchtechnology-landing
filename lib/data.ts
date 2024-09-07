@@ -57,7 +57,7 @@ export const testimonial: ITestimonialData[] = [
   {
     id: "3",
     position: 3,
-    image: "/kolajo-olufemi",
+    image: "/kolajo-olufemi.jpg",
     name: "Kolajo Oluwafemi",
     text: "Regardless of your status and your level of proficiency, Coast Research will refine and bring out the best of you. The meticulous passion with which tech is taught will make the dullest to become a professional in no time. The gap between the class and the reality is being bridged at Coast Research Technology. 100% recommended",
     url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
