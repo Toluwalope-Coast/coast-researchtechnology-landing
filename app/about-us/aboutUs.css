@@ -84,6 +84,8 @@
 
 .item1 img {
   mix-blend-mode: luminosity;
+    min-height: 17rem;
+    object-fit: cover;
 }
 
 .overlay {
@@ -238,6 +240,11 @@
   text-align: center;
 }
 
+
+  .hero-space p, .coreValues p {
+    font-size: var(--fs-sm);
+  }
+
 .justify-text {
   text-align: justify;
   padding-bottom: 1rem;
@@ -328,6 +335,11 @@ section.teams {
   .coreValues h2 {
     font-size: var(--fs-lg);
     font-weight: var(--fw-bold);
+  }
+
+  
+  .hero-space p, .coreValues p {
+    font-size: var(--fs-nm);
   }
 }
 
