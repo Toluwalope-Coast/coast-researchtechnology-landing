@@ -347,7 +347,6 @@ section.teams {
   .hero-space p, .coreValues p {
     font-size: var(--fs-nm);
   }
-
 }
 
 @media (min-width: 1024px) {
