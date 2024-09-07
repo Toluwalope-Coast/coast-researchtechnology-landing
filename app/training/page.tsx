@@ -2,6 +2,8 @@ import React from "react";
 import style from "./training.module.css";
 import Image from "next/image";
 import Carousel from "@/components/AllCarousel/HeroCarousel/carousel";
+import { slides } from "@/lib/data";
+
 import Link from "next/link";
 
 const slides = [
@@ -122,6 +124,7 @@ const page = () => {
       {/* <section>
         <Carousel slides={slides} />
       </section> */}
+      <Carousel slides={slides} />
     </main>
   );
 };

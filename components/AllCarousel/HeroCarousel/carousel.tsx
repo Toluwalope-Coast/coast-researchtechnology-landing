@@ -52,7 +52,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                 height={1000}
               />
               <div className={styles.slideContent}>
-                <h1 className={styles.slideHead}>{slide.heading}</h1>
+                <h2 className={styles.slideHead}>{slide.heading}</h2>
                 <div className={styles.slideText}>{slide.text}</div>
               </div>
             </div>

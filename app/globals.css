@@ -258,6 +258,10 @@ html:focus-within {
   font-family: "Poppins", sans-serif;
 }
 
+.primarySection {
+  visibility: hidden;
+}
+
 .btn {
   border: none;
   min-width: 15px;

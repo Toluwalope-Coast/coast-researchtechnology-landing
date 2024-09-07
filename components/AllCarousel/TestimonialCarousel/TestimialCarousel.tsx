@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import styles from "./TestimonialCarousel.module.css";
@@ -10,6 +10,7 @@ import Link from "next/link";
 interface Slide {
   image: string;
   name: string;
+  ceoName?: string;
   text: string;
   url: string;
 }
@@ -20,6 +21,22 @@ interface CarouselProps {
 
 const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
   const sliderRef = useRef<Slider>(null);
+  const [isMounted, setIsMounted] = useState(false); // Track if the component is mounted
+  const [isServicesPage, setIsServicesPage] = useState(false); // Track if we're on the /services page
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (isMounted && typeof window !== "undefined") {
+      // Check the current path using window.location.pathname
+      const currentPath = window.location.pathname;
+      if (currentPath === "/services") {
+        setIsServicesPage(true);
+      }
+    }
+  }, [isMounted]);
 
   const settings = {
     infinite: true,
@@ -61,7 +78,7 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
     sliderRef.current?.slickPrev();
   };
 
-  // Function to truncate text to 20 words
+  // Function to truncate text to 30 words
   const truncateText = (text: string, wordLimit: number) => {
     const words = text.split(" ");
     return words.length > wordLimit
@@ -69,17 +86,30 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
       : text;
   };
 
+  // Don't render the carousel until it's mounted
+  if (!isMounted) return null;
+
   return (
     <div className={styles.carouselContainer}>
       <Slider ref={sliderRef} {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className={styles.slide}>
             <Link href={slide.url}>
-              <div className={styles.slideContainer}>
+              <div
+                className={
+                  isServicesPage
+                    ? styles.slideContainerServices
+                    : styles.slideContainer
+                }
+              >
                 <Image
                   src={slide.image}
                   alt={`Slide ${index}`}
-                  className={styles.slideImage}
+                  className={
+                    isServicesPage
+                      ? styles.slideImageServices // Apply different style on /services page
+                      : styles.slideImage
+                  }
                   width={1000}
                   height={1000}
                 />
@@ -90,6 +120,7 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
                     <Link href={slide.url} className="readReviews">
                       Read More
                     </Link>
+                    <div className={styles.ceoName}>{slide.ceoName}</div>
                   </div>
                 </div>
               </div>

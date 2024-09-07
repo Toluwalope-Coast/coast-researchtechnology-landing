@@ -24,11 +24,16 @@ const OurVisionPage: React.FC = () => {
           <div className="hero-space item2">
             <h1>OUR VISION</h1>
             <p>
-              At Coast, our vision is to be a global leader in technology and
-              innovation, transforming the way businesses and individuals
-              interact with software solutions. We aspire to create a future
-              where technology seamlessly integrates into everyday life,
-              empowering people and organizations to reach their full potential.
+              At Coast Research Technology, our vision is to be the leading
+              catalyst for transformative change in the technology landscape. We
+              aspire to shape the future of software development, training, and
+              recruitment by pioneering innovative solutions and fostering a
+              culture of excellence. Our goal is to inspire and drive progress
+              by creating technologies and opportunities that not only meet but
+              exceed the evolving needs of businesses and individuals. We
+              envision a world where our contributions elevate industry
+              standards, empower communities, and create lasting impact through
+              the power of smart coding and visionary talent.
             </p>
             <button
               type="button"

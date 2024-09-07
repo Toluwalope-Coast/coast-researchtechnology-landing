@@ -21,22 +21,27 @@ const AboutSection = () => {
           </div>
           <article className={`${styles.aboutContent}`}>
             <p className={`${styles.lead}`}>
-              Coast Research Technology is an outstanding and emerging ICT giant
-              in Africa, creating groundbreaking technological solutions. Since
-              2021, it has consistently helped all of its ever joyous clients (
-              both individual and corporate bodies) to bring their dream
-              solutions to reality. Having the best team of idea-to-solution
-              creators has helped position them as an authority within the tech
-              industry, especially when it comes to creating groundbreaking
-              solutions backed by innovative thinking and visionary map work.
+              <strong>
+                At Coast Research Technology, our mission is clear: &quot;Making
+                life easier through smart coding.&quot;
+              </strong>
+              <br />
+              <br />
             </p>
             <p className={`${styles.lead}`}>
-              With our amiable classNamerooms and adepts trainers packing years
-              of practical and theoretical experiences, our training center has
-              since 2020, seen brilliant IT prodigies walk through our doors to
-              get the technical skills needed in different IT fields, where they
-              are currently using these skills to collaborate with other great
-              minds both within the country and globally
+              We are more than just a software development, training, and
+              recruitment company—we are innovators committed to transforming
+              how businesses and individuals interact with technology. By
+              offering cutting-edge software solutions, expert training
+              programs, and unparalleled recruitment services, we harness the
+              power of technology to drive progress and ensure our clients and
+              trainees stay ahead in an ever-evolving digital landscape.
+            </p>
+            <br />
+            <p className={`${styles.lead}`}>
+              Our dedication to excellence in these three core areas underscores
+              our belief in technology’s potential to elevate lives and redefine
+              industry standards.
             </p>
           </article>
         </div>

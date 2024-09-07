@@ -25,6 +25,7 @@ export interface ITestimonialData {
   text: string;
   url: string;
   name: string;
+  ceoName?: string;
   isActive?: boolean;
   height?: number; // Define height prop
 }

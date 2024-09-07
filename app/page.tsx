@@ -13,6 +13,15 @@ const Home: React.FC = () => {
 
   return (
     <main>
+      <section className="primarySection">
+        <h1>COAST RESEARCH TECHNOLOGY</h1>
+        <p>
+          At Coast Research Technology, our mission is simple: &quot;Making life
+          easier through smart coding.&quot; We believe in the power of
+          technology to transform lives, and we work tirelessly to ensure that
+          our clients and trainees are always a step ahead.
+        </p>
+      </section>
       {/* Hero Section Slider */}
       <Carousel slides={slides} />
 

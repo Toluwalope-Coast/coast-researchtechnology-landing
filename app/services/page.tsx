@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import "./services.css";
-import ReviewsCarousel from "@/components/AllCarousel/ReviewsCarousel/ReviewsCarousel";
-import { reviews, testimonial } from "@/lib/data";
+import { clientsTestimonial, reviews, testimonial } from "@/lib/data";
+import TestimonialCarousel from "@/components/AllCarousel/TestimonialCarousel/TestimialCarousel";
 
 const ServicesPage: React.FC = () => {
   return (
@@ -196,7 +196,7 @@ const ServicesPage: React.FC = () => {
               nation
             </p>
 
-            <ReviewsCarousel slides={reviews} />
+            <TestimonialCarousel slides={clientsTestimonial} />
           </section>
         </main>
       </div>

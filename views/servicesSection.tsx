@@ -30,14 +30,18 @@ const ServicesSection = () => {
               <div className={`${styles.cardBody}`}>
                 <ul role="list" style={{ listStyleType: "circle" }}>
                   <li>
-                    We specialize in developing complex, sophisticated software
-                    that will help you digitally transform your business and the
-                    industry.
+                    At Coast Research Technology, we specialize in developing
+                    complex and sophisticated software solutions designed to
+                    drive digital transformation for your business and industry.
                   </li>
                   <li>
-                    Get world-className enterprise engineering, design and
-                    technology, consulting services to automate your business
-                    processes, soar your operations and customer service
+                    Our world-class enterprise engineering, design, and
+                    technology consulting services are tailored to automate your
+                    processes, enhance operations, and elevate customer service.
+                  </li>
+                  <li>
+                    Let us help you transform your vision into reality with
+                    cutting-edge technology and expert craftsmanship.
                   </li>
                 </ul>
               </div>
@@ -45,6 +49,7 @@ const ServicesSection = () => {
                 Read More
               </Link>
             </div>
+
             <div className={`${styles.card}`}>
               <div className={`${styles.cardHeader}`}>
                 <h3 className={`${styles.cardHeading}`}>
@@ -53,18 +58,24 @@ const ServicesSection = () => {
               </div>
               <div className={`${styles.cardBody}`}>
                 <ul role="list" style={{ listStyleType: "circle" }}>
-                  <li>Are you tired of learning outdated technologies?</li>
                   <li>
-                    Are you tired of learning with outdated course materials?
+                    Are you frustrated with outdated technologies and course
+                    materials? Do you need practical, up-to-date training on the
+                    latest IT innovations?
                   </li>
                   <li>
-                    Do you need practical training on the latest IT
-                    technologies?
+                    Choosing the right place for training can be crucial for
+                    your career or the future of your organization.
                   </li>
                   <li>
-                    Taking a decision on the right place to train yourself or
-                    your staff can be very vital for your career or the future
-                    of your organization.
+                    At Coast Research Technology, we offer cutting-edge training
+                    programs that provide hands-on experience with the latest
+                    technologies, ensuring you and your team are equipped to
+                    excel in a rapidly evolving digital landscape.
+                  </li>
+                  <li>
+                    Elevate your skills and future-proof your career with our
+                    comprehensive training solutions.
                   </li>
                 </ul>
               </div>
@@ -77,20 +88,34 @@ const ServicesSection = () => {
             <div className={`${styles.card}`}>
               <div className={`${styles.cardHeader}`}>
                 <h3 className={`${styles.cardHeading}`}>
-                  Research and App Development
+                  Exceptional Talent Recruitment
                 </h3>
               </div>
               <div className={`${styles.cardBody}`}>
                 <ul role="list" style={{ listStyleType: "circle" }}>
                   <li>
-                    We specialize in developing complex, sophisticated software
-                    that will help you digitally transform your business and the
-                    industry.
+                    Finding the perfect match between talent and opportunity is
+                    critical to your organization&apos;s success.
                   </li>
                   <li>
-                    Get world-className enterprise engineering, design and
-                    technology, consulting services to automate your business
-                    processes, soar your operations and customer service
+                    At Coast Research Technology, our recruitment services are
+                    in a league of their own.
+                  </li>
+                  <li>
+                    We go beyond conventional approaches to deliver a meticulous
+                    and high-quality service designed for those who demand
+                    nothing but excellence and innovation.
+                  </li>
+                  <li>
+                    Our approach is aligned with the unique needs of both
+                    candidates and companies, ensuring precise matching of
+                    exceptional talent with visionary roles.
+                  </li>
+                  <li>
+                    Whether you&apos;re seeking top-tier professionals to drive
+                    your business forward or looking for your next career move,
+                    our expert recruitment services provide unparalleled
+                    precision and insight to meet your needs.
                   </li>
                 </ul>
               </div>
@@ -101,23 +126,29 @@ const ServicesSection = () => {
             <div className={`${styles.card}`}>
               <div className={`${styles.cardHeader}`}>
                 <h3 className={`${styles.cardHeading}`}>
-                  Skill acquisition and career growth
+                  Strategic Consulting Services
                 </h3>
               </div>
               <div className={`${styles.cardBody}`}>
                 <ul role="list" style={{ listStyleType: "circle" }}>
-                  <li>Are you tired of learning outdated technologies?</li>
                   <li>
-                    Are you tired of learning with outdated course materials?
+                    At Coast Research Technology, our consulting services are
+                    designed to help you navigate the complexities of technology
+                    and achieve strategic goals.
                   </li>
                   <li>
-                    Do you need practical training on the latest IT
-                    technologies?
+                    We offer expert guidance in enterprise engineering, system
+                    design, and technology integration to streamline your
+                    operations and drive innovation.
                   </li>
                   <li>
-                    Taking a decision on the right place to train yourself or
-                    your staff can be very vital for your career or the future
-                    of your organization.
+                    Our consultants work closely with you to understand your
+                    unique challenges and develop tailored solutions that
+                    enhance efficiency, boost productivity, and support your
+                    long-term vision. From automating business processes to
+                    optimizing customer experiences, our strategic consulting is
+                    committed to delivering actionable insights and impactful
+                    results.
                   </li>
                 </ul>
               </div>

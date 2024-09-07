@@ -24,14 +24,15 @@ const OurMissionPage: React.FC = () => {
           <div className="hero-space item2">
             <h1>OUR MISSION</h1>
             <p>
-              At Coast research technology, our mission is to empower
-              individuals and businesses around the world from the pace setting
-              region of Nigeria, west Africa Ibadan, Oyo state utilizing our
-              cutting-edge software solutions that drive innovation, efficiency,
-              and growth. We are committed to delivering high-quality, custom
-              technology services that meet the unique needs of each client,
-              fostering a collaborative environment where creativity and
-              technical excellence thrive.
+              Our mission at Coast Research Technology is to empower businesses
+              and individuals through innovative software solutions, expert
+              training, and strategic recruitment services. We are not just
+              developers; we are innovators who craft intelligent, bespoke
+              solutions that anticipate future needs, solve complex challenges,
+              and drive growth. By combining creative thinking, advanced
+              technology, and a deep commitment to excellence, we aim to make
+              life easier through smart coding, transforming the way people work
+              and live.
             </p>
             <button
               type="button"
