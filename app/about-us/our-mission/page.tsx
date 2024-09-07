@@ -129,38 +129,35 @@ const OurMissionPage: React.FC = () => {
         <TeamCarousel slides={team} />
 
         <section id="coreValues" className="coreValues">
-          <div className="coreVlue-text">
-            <h2 className="toggle-h2">OUR CORE VALUES & CULTURE</h2>
-            <p className="justify-text">
-              At Coast Research Technology, we are driven by a commitment to
-              innovation and excellence, constantly seeking creative and
-              forward-looking solutions to address future needs and complex
-              challenges. We strive to deliver high-quality software
-              development, comprehensive training programs, and effective
-              recruitment services that empower businesses and individuals to
-              thrive in an ever-evolving digital landscape. Through our emphasis
-              on precision, we ensure a meticulous and accurate approach to
-              matching talent with opportunities, tailored to meet unique needs
-              and drive success.
-            </p>
-            <p className="justify-text">
-              We believe in fostering growth and transformation by nurturing
-              talent and promoting a culture that values creativity,
-              collaboration, and practical problem-solving. Our mission is to
-              empower the next generation of tech professionals with the skills,
-              confidence, and support needed to excel in their careers. By
-              providing tailored solutions and strategic recruitment, we help
-              businesses and individuals achieve their full potential, driving
-              positive change and progress across the tech industry.
-            </p>
-            <button
-              type="button"
-              className="read-more-btn"
-              aria-label="Open read more"
-            >
-              <Link href="/services">More Details</Link>
-            </button>
-          </div>
+          <h2 className="toggle-h2">OUR CORE VALUES & CULTURE</h2>
+          <p className="justify-text">
+            At Coast Research Technology, we are driven by a commitment to
+            innovation and excellence, constantly seeking creative and
+            forward-looking solutions to address future needs and complex
+            challenges. We strive to deliver high-quality software development,
+            comprehensive training programs, and effective recruitment services
+            that empower businesses and individuals to thrive in an
+            ever-evolving digital landscape. Through our emphasis on precision,
+            we ensure a meticulous and accurate approach to matching talent with
+            opportunities, tailored to meet unique needs and drive success.
+          </p>
+          <p className="justify-text">
+            We believe in fostering growth and transformation by nurturing
+            talent and promoting a culture that values creativity,
+            collaboration, and practical problem-solving. Our mission is to
+            empower the next generation of tech professionals with the skills,
+            confidence, and support needed to excel in their careers. By
+            providing tailored solutions and strategic recruitment, we help
+            businesses and individuals achieve their full potential, driving
+            positive change and progress across the tech industry.
+          </p>
+          <button
+            type="button"
+            className="read-more-btn"
+            aria-label="Open read more"
+          >
+            <Link href="/services">More Details</Link>
+          </button>
         </section>
       </div>
     </main>

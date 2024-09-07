@@ -229,11 +229,15 @@
 }
 
 .coreValues {
-  display: flex;
-  padding: 2rem;
-  margin-top: 1rem;
-  color: var(--primary-text-color);
-}
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    color: var(--primary-text-color);
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}   
 
 .coreValues h2 {
   font-size: var(--fs-md);
@@ -342,8 +346,10 @@ section.teams {
   
   .hero-space p, .coreValues p {
     font-size: var(--fs-nm);
-    text-align: left;
   }
+   .hero-space p{
+    text-align: left;
+   }
 }
 
 @media (min-width: 1024px) {
