@@ -347,9 +347,7 @@ section.teams {
   .hero-space p, .coreValues p {
     font-size: var(--fs-nm);
   }
-   .hero-space p{
-    text-align: left;
-   }
+
 }
 
 @media (min-width: 1024px) {
@@ -367,6 +365,10 @@ section.teams {
     flex-basis: 45%;
     padding: 2rem;
   }
+
+   .hero-space p{
+    text-align: left;
+   }
 
   .item2 {
     color: var(--primary-text-color);
