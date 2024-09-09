@@ -82,7 +82,8 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
   const truncateText = (text: string, wordLimit: number) => {
     const words = text.split(" ");
     return words.length > wordLimit
-      ? words.slice(0, wordLimit).join(" ") + "... "
+      ? words.slice(0, wordLimit).join(" ") +
+          "... Read More"
       : text;
   };
 
@@ -127,9 +128,6 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
                   <h3 className={styles.slideName}>{slide.name}</h3>
                   <div className={styles.slideText}>
                     {truncateText(slide.text, 30)}
-                    <Link href={slide.url} className="readReviews">
-                      Read More
-                    </Link>
                     <div className={styles.ceoName}>{slide.ceoName}</div>
                   </div>
                 </div>
