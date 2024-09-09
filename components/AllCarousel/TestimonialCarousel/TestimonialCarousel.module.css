@@ -4,6 +4,25 @@
     margin: auto;
 }
 
+.aboutHeader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutHeading {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-medium);
+    text-transform: capitalize;
+    color: var(--clr-hero-services);
+}
+
+.aboutHeading .graphic {
+    display: inline;
+    vertical-align: middle;
+    filter: drop-shadow(0px 9px 18px rgba(0, 0, 0, 0.12));
+}
+
 .slideContainer {
     display: flex;
     flex-direction: column;

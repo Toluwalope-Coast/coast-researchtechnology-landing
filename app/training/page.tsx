@@ -4,7 +4,7 @@ import Image from "next/image";
 import Carousel from "@/components/AllCarousel/HeroCarousel/carousel";
 
 import Link from "next/link";
-import { slides } from "@/lib/data";
+import { trainingSlides } from "@/lib/data";
 
 // const slides = [
 //   {
@@ -121,9 +121,9 @@ const page = () => {
           className={style.techiePacks}
         />
       </section>
-      {/* <section>
-        <Carousel slides={slides} />
-      </section> */}
+      <section>
+        <Carousel slides={trainingSlides} />
+      </section>
     </main>
   );
 };

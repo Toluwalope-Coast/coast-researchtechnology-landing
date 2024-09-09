@@ -81,8 +81,8 @@ export const testimonial: ITestimonialData[] = [
   {
     id: "6",
     position: 6,
-    image: "/lawal_abdulateef.png",
-    name: "Lawal Abdulateef",
+    image: "/popoola_temitope.jpg",
+    name: "Popoola Temitope",
     text: "A great software development company, they have a very nice learning environment, great tutors and their services are top notch and very professional",
     url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
   },
@@ -124,7 +124,7 @@ export const studentsTestimonial: ITestimonialData[] = [
   {
     id: "5",
     position: 5,
-    image: "/Toluwase.jpag",
+    image: "/Toluwase.jpeg",
     name: "Toluwase",
     text: "The teachings are beyond imaginable and very practical. I'll fully recommend this training school to anyone that definitely wants value for money. Well done and good job to coast research technology 👍",
     url: "https://maps.app.goo.gl/HnD3ghWV4MmJ2iUg6",
@@ -184,6 +184,37 @@ export const clientsTestimonial: ITestimonialData[] = [
     text: "",
     url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
     ceoName: "Ada Nsitem, (CEO)",
+  },
+];
+
+export const trainingSlides: ISlide[] = [
+  {
+    id: "1",
+    image: "/kolade-agboola-nelson.jpeg",
+    name: "Kolade Agboola Nelson",
+    text: "Coast Research Technology is an amazing place to learn about tech. The teacher is knowledgeable and approachable, and he really goes out of his way to help students succeed. The facilities are modern and well-equipped, and the school has a strong sense of community. Overall, I would highly recommend Coast Research Technology to anyone interested in pursuing a career in tech.",
+    position: "Database Administrator",
+  },
+  {
+    id: "2",
+    image: "/segun_joseph.png",
+    name: "Segun Joseph",
+    text: "If you are looking for a software development company in Ibadan to explore into Tech career, Coast Research Technology Ibadan is the best option for you to make. They are highly skilled in solving real life problems, I bet you, a trial today might convince you.",
+    position: "Fullstack Developer",
+  },
+  {
+    id: "3",
+    image: "/isaac ogunleye.jpeg",
+    name: "Isaac Ogunleye",
+    text: "The teachings are beyond imaginable and very practical. I'll fully recommend this training school to anyone that definitely wants value for money. Well done and good job to coast research technology 👍",
+    position: "Backend Developer",
+  },
+  {
+    id: "4",
+    image: "/Adeleke Michael Segun.png",
+    name: "Adeleke Michael Segun",
+    text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
+    position: "Frontend Developer",
   },
 ];
 

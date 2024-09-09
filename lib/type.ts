@@ -1,11 +1,13 @@
 export interface ISlide {
   id: string;
-  heading: string;
+  heading?: string;
   text: string;
-  Link: string;
+  Link?: string;
   url?: string;
   image: string;
   title?: string;
+  position?: string;
+  name?: string;
 }
 
 export interface ICarouselItem {

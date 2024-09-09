@@ -91,6 +91,16 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
 
   return (
     <div className={styles.carouselContainer}>
+      <h2 className={`${styles.aboutHeading}`}>
+        <Image
+          className={`${styles.graphic}`}
+          src="/heading_polygon.png"
+          alt=""
+          width={50}
+          height={50}
+        />{" "}
+        About Us
+      </h2>
       <Slider ref={sliderRef} {...settings}>
         {slides.map((slide, index) => (
           <div key={index} className={styles.slide}>
