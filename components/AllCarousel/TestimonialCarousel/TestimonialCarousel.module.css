@@ -15,6 +15,7 @@
     font-weight: var(--fw-medium);
     text-transform: capitalize;
     color: var(--clr-hero-services);
+    text-align: center;
 }
 
 .aboutHeading .graphic {

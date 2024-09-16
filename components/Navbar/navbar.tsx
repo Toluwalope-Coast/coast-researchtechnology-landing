@@ -128,10 +128,10 @@ export const Navbar: React.FC = () => {
           <Menu className="fa-solid fa-bars-staggered sidebarOpen" />
         </button>
         {/* Coast Research Technology Logo */}
-        <div className="logo">
+        <Link href="/" className="logo">
           <Image src="/logoCoast.png" alt="Coast Logo" width={50} height={50} />
           <span>COAST RESEARCH TECHNOLOGY</span>
-        </div>
+        </Link>
 
         <div className="menu">
           <div className="menu-mobile-logo">

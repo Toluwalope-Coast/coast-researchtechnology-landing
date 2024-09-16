@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const ContactPage: React.FC = () => {
   return (
-    <main>
+    <main className="first-section">
       <section className="contact-section">
         <div className="contact-container">
           <h1>Contact</h1>

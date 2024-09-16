@@ -56,3 +56,78 @@ export interface IReviewsData {
 export interface IReviewsProps {
   reviews: IReviewsData[];
 }
+
+// Define Meta Information
+export interface IMeta {
+  description: string;
+  keywords: string[];
+  author: string;
+}
+
+// Define OpenGraph Meta Information
+export interface IOpenGraph {
+  title: string;
+  description: string;
+  type: string;
+  post_url: string;
+  post_image_url: string;
+}
+
+// Define Twitter Meta Information
+export interface ITwitterMeta {
+  card: string;
+  title: string;
+  description: string;
+  post_image_url: string;
+}
+
+// Define Blog Meta Information
+export interface IBlogMeta {
+  title: string;
+  time: number;
+  post_url: string;
+  post_image_url: string;
+  read_duration: string;
+  view_count: number;
+  tags: string[];
+  author: string;
+}
+
+// Define Block Elements
+export interface IEditorBlock {
+  type: string;
+  data: any;
+  accessibility?: {
+    role?: string;
+    ariaLevel?: number;
+    alt?: string;
+  };
+}
+
+// Define Blog Body
+export interface IBlockBody {
+  blocks: IEditorBlock[];
+  version: string;
+}
+
+// Define Blog Post
+export interface IBlogPost {
+  id: string;
+  meta: IMeta;
+  opengraph: IOpenGraph;
+  twittermeta: ITwitterMeta;
+  blogmeta: IBlogMeta;
+  blockbody: IBlockBody;
+}
+
+export interface ITrendingNewsProps {
+  trendingNews: IBlogMeta[];
+}
+
+export interface IPostsProps {
+  posts: IBlogMeta[];
+}
+
+export interface IBlogArea {
+  blogArea: IBlogMeta[];
+}

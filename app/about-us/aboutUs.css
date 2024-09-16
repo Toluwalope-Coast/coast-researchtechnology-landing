@@ -1,13 +1,10 @@
-.about-bg {
-  margin-top: 4.5rem;
-}
-
 .hero-hold {
   display: flex;
   flex-direction: column;
   /* position: relative; */
   background: rgb(217, 217, 217);
   background: radial-gradient(circle, var(--clr-about-gradient1) 0%, var(--clr-about-gradient2) 58%, var(--clr-about-gradient3) 75%);
+  justify-content: space-between;
 }
 
 .heroImg {
@@ -86,8 +83,8 @@
 
 .item1 img {
   mix-blend-mode: luminosity;
-    min-height: 17rem;
-    object-fit: cover;
+  min-height: 17rem;
+  object-fit: cover;
 }
 
 .overlay {
@@ -229,15 +226,15 @@
 }
 
 .coreValues {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-    margin-top: 1rem;
-    color: var(--primary-text-color);
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}   
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  color: var(--primary-text-color);
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
 
 .coreValues h2 {
   font-size: var(--fs-md);
@@ -247,10 +244,11 @@
 }
 
 
-  .hero-space p, .coreValues p {
-    font-size: var(--fs-sm);
-    text-align: center;
-  }
+.hero-space p,
+.coreValues p {
+  font-size: var(--fs-sm);
+  text-align: center;
+}
 
 .justify-text {
   text-align: justify;
@@ -343,8 +341,9 @@ section.teams {
     font-weight: var(--fw-bold);
   }
 
-  
-  .hero-space p, .coreValues p {
+
+  .hero-space p,
+  .coreValues p {
     font-size: var(--fs-nm);
   }
 }
@@ -356,18 +355,18 @@ section.teams {
     height: 90vh;
     gap: 2rem;
     overflow: hidden;
-    padding-top: 4rem;
+    padding-top: 1rem;
   }
 
   .hero-space {
     align-items: start;
-    flex-basis: 45%;
     padding: 2rem;
+    width: 60%;
   }
 
-   .hero-space p{
+  .hero-space p {
     text-align: left;
-   }
+  }
 
   .item2 {
     color: var(--primary-text-color);

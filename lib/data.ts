@@ -81,7 +81,7 @@ export const testimonial: ITestimonialData[] = [
   {
     id: "6",
     position: 6,
-    image: "/popoola_temitope.jpg",
+    image: "/popoola_temitope.jpeg",
     name: "Popoola Temitope",
     text: "A great software development company, they have a very nice learning environment, great tutors and their services are top notch and very professional",
     url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
@@ -132,8 +132,8 @@ export const studentsTestimonial: ITestimonialData[] = [
   {
     id: "6",
     position: 6,
-    image: "/Temmy.jpag",
-    name: "Temmy",
+    image: "/popoola_temitope.jpeg",
+    name: "Temitope Popoola",
     text: "The teachings are beyond imaginable and very practical. I'll fully recommend this training school to anyone that definitely wants value for money. Well done and good job to coast research technology 👍",
     url: "https://maps.app.goo.gl/HnD3ghWV4MmJ2iUg6",
   },
@@ -211,10 +211,10 @@ export const trainingSlides: ISlide[] = [
   },
   {
     id: "4",
-    image: "/Adeleke Michael Segun.png",
-    name: "Adeleke Michael Segun",
-    text: "The past few years have seen a steady increase in the demand for tech skills in the industry, passing out from the college or the university will not guarantee you the technical know-how to get you ready for the industry. At Coast Research Technology, you will actively acquire the technical skills to get you ready for the industry and keep up with its evolving technologies",
-    position: "Frontend Developer",
+    image: "/temitope-popoola.jpeg",
+    name: "Temitope Popoola",
+    text: "The teachings are beyond imaginable and very practical. I'll fully recommend this training school to anyone that definitely wants value for money. Well done and good job to coast research technology 👍",
+    position: "Fullstack Developer",
   },
 ];
 
@@ -272,3 +272,62 @@ export const reviews: IReviewsData[] = [
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sequi iusto dolor facilis, natus asperiores vero, libero aut ipsam fugit voluptas quibusdam repellendus dolorum eum molestiae odio! Ipsam, dolore! Hic?",
   },
 ];
+
+// export const blogs: IBlogData[] = [
+//   {
+//     id: "1",
+//     post_image_url:
+//       "/compressed/understanding-git-version-control-demystified.webp",
+//     alt_image_url: "Understanding Git: Version Control Demystified",
+//     title: "Understanding Git: Version Control Demystified",
+//     date: "SEPTEMBER 28, 2023",
+//     post_author: "Toluwalope Coast",
+//   },
+//   {
+//     id: "2",
+//     post_image_url:
+//       "/compressed/mastering-app-state-management-the-key-to-crafting-ceamless-user-experiences.webp",
+//     alt_image_url:
+//       "Mastering App State Management: The Key to Crafting Seamless User Experiences.",
+//     title:
+//       "Mastering App State Management: The Key to Crafting Seamless User Experiences.",
+//     date: "SEPTEMBER 21, 2023",
+//     post_author: "Toluwalope Coast",
+//   },
+//   {
+//     id: "3",
+//     post_image_url:
+//       "/compressed/javaScript-essentials-from-variables-to-functions.webp",
+//     alt_image_url: "Javascript Essential: From Variables to Functions",
+//     title: "Javascript Essential: From Variables to Functions",
+//     date: "SEPTEMBER 28, 2023",
+//     post_author: "Toluwalope Coast",
+//   },
+//   {
+//     id: "4",
+//     post_image_url:
+//       "/compressed/devops-dynamics-streamlining-development-to-deployment-workflows.webp",
+//     alt_image_url:
+//       "DevOps Dynamics: Streamlining Development to Deployment Workflows",
+//     title: "DevOps Dynamics: Streamlining Development to Deployment Workflows",
+//     date: "SEPTEMBER 28, 2023",
+//     post_author: "Toluwalope Coast",
+//   },
+// ];
+
+// export const trendingNews: ITrendingNewsData[] = [
+//   {
+//     id: "1",
+//     content:
+//       "DevOps Dynamics: Streamlining Development to Deployment Workflows",
+//   },
+//   {
+//     id: "1",
+//     content: "Understanding Git: Version Control Demystified",
+//   },
+//   {
+//     id: "1",
+//     content:
+//       "Mastering App State Management: The Key to Crafting Seamless User Experiences.",
+//   },
+// ];

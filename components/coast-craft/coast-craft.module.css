@@ -1,0 +1,260 @@
+.section {
+    margin-inline: 1rem;
+}
+
+.trendingNews {
+    padding: 1.5rem;
+    margin-block-start: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--trending-news-bg);
+}
+
+.trendingNews h2 {
+    background-color: var(--primary-text-color);
+    padding: 1rem 2rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-md);
+    color: var(--plain-color);
+}
+
+/* Ensure list items are hidden and positioned on top of each other */
+.list {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carouselItem {
+    display: none;
+    width: 100%;
+    /* top: 0; */
+}
+
+.carouselItem.active {
+    display: flex;
+}
+
+.heroArea {
+    margin-block-start: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.blog {
+    position: relative;
+    width: 100%;
+}
+
+.blogImage {
+    width: 100%;
+}
+
+.blog::after {
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 4;
+}
+
+.date {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    max-width: 80%;
+    color: var(--plain-color);
+    z-index: 5;
+    font-size: 13px;
+}
+
+.blogTags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin: 1rem 0;
+    padding: 7px 10px;
+    background-color: var(--primary-text-color);
+    color: var(--plain-color);
+}
+
+.blogTags h2 {
+    font-size: 12px;
+}
+
+.blogTags .tagLists {
+    display: flex;
+    padding: 0;
+    font-size: 12px;
+}
+
+.buttons {
+    padding: 0 6px;
+}
+
+.linkTitle {
+    font-weight: 700;
+    font-size: .9rem;
+    padding-top: 1rem;
+}
+
+.linkTitle:hover {
+    color: var(--primary-text-color);
+}
+
+.author {
+    padding-top: .5rem;
+}
+
+.postTime {
+    padding-bottom: .5rem;
+}
+
+.date {
+    padding: 1rem 0;
+}
+
+.container-second-col {
+    height: fit-content;
+    width: 100%;
+}
+
+
+.onGoing {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.blog2Content {
+    line-height: 1.3;
+    padding-top: 1rem;
+}
+
+.containerFirstCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsComtent {
+    flex: 3;
+}
+
+.secondContainer {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+
+.newsletter {
+    background-color: var(--clr-training-text-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--plain-color);
+}
+
+.newsletter input {
+    padding: 10px 20px;
+}
+
+.newsletter p {
+    font-style: italic;
+}
+
+.newsBtn {
+    background-color: var(--primary-text-color);
+    color: var(--plain-color);
+    padding: 10px 20px;
+}
+
+@media (min-width:480px) {
+    .date {
+        font-size: 1.2rem;
+    }
+
+    .blogTags h2 {
+        font-size: 1rem;
+    }
+
+    .blogTags .tagLists {
+        display: flex;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .blogTags {
+        padding: 12px;
+    }
+}
+
+@media (min-width:576px) {
+
+    .heroArea,
+    .onGoing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:768px) {
+    .trendingNews {
+        flex-direction: row;
+        padding: 1.5rem 3rem;
+        gap: 2.1rem;
+    }
+
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .date {
+        font-size: 1.2rem;
+    }
+
+    .blogTags h2 {
+        font-size: 1.2rem;
+    }
+
+    .blogTags .tagLists {
+        display: flex;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .blogTags {
+        padding: 12px;
+    }
+
+    .blog2Content {
+        font-size: 1.2rem;
+    }
+
+    .linkTitle {
+        font-size: 1.5rem;
+    }
+
+    .buttons {
+        padding: 0 12px;
+    }
+
+}
+
+@media (min-width:1024px) {
+    .containerFirstCol {
+        display: flex;
+        gap: 2rem;
+    }
+}

@@ -5,6 +5,7 @@ import Carousel from "@/components/AllCarousel/HeroCarousel/carousel";
 
 import Link from "next/link";
 import { trainingSlides } from "@/lib/data";
+import TrainingCarousel from "@/components/AllCarousel/TrainingCarousel/TrainingCarousel";
 
 // const slides = [
 //   {
@@ -23,7 +24,7 @@ import { trainingSlides } from "@/lib/data";
 
 const page = () => {
   return (
-    <main>
+    <main className="first-section">
       <section className={style.techie}>
         <Image
           src="/coast-segun-dup.png"
@@ -122,7 +123,7 @@ const page = () => {
         />
       </section>
       <section>
-        <Carousel slides={trainingSlides} />
+        <TrainingCarousel slides={trainingSlides} />
       </section>
     </main>
   );

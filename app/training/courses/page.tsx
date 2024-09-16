@@ -8,7 +8,7 @@ const courses = [];
 
 const CoursesPage = () => {
   return (
-    <main>
+    <main className="first-section">
       <section className={Styles.heroSection}>
         <div>
           <Image
