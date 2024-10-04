@@ -4,6 +4,7 @@ import {
   ITestimonialData,
   ITeamData,
   IReviewsData,
+  ICourses,
 } from "./type";
 
 export const slides: ISlide[] = [
@@ -331,3 +332,36 @@ export const reviews: IReviewsData[] = [
 //       "Mastering App State Management: The Key to Crafting Seamless User Experiences.",
 //   },
 // ];
+
+export const courses: ICourses[] = [
+  {
+    id: 1,
+    title: "Web Development",
+    duration: "6 months",
+  },
+  {
+    id: 2,
+    title: "Mobile App Development",
+    duration: "6 months",
+  },
+  {
+    id: 3,
+    title: "UI/UX Design",
+    duration: "6 months",
+  },
+  {
+    id: 4,
+    title: "Database Development",
+    duration: "6 months",
+  },
+  {
+    id: 5,
+    title: "Data Science",
+    duration: "6 months",
+  },
+  {
+    id: 6,
+    title: "Cyber Security",
+    duration: "8-9 months",
+  },
+];

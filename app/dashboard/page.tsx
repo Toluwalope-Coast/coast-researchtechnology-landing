@@ -1,7 +1,15 @@
-import React from "react";
+// pages/index.tsx
+"use client";
+import DashboardLayout from "@/app/dashboard/DashboardLayout";
 
-const DashboardPage = () => {
-  return <div>Dashboard Page</div>;
+const HomePage = () => {
+  return (
+    <>
+      <DashboardLayout title="Dashboard" description="Welcome to the Dashbaord">
+        <h1 className="text-2xl">Welcome to the Dashboard</h1>
+      </DashboardLayout>
+    </>
+  );
 };
 
-export default DashboardPage;
+export default HomePage;

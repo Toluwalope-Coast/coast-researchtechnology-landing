@@ -3,8 +3,7 @@ import Image from "next/image";
 import Styles from "./courses.module.css";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-const courses = [];
+import { courses } from "@/lib/data";
 
 const CoursesPage = () => {
   return (
@@ -35,12 +34,26 @@ const CoursesPage = () => {
             today!
           </p>
           <Button className={Styles.button}>
-            <Link href="#">Apply</Link>
+            <Link href="#">Apply Now</Link>
           </Button>
         </div>
       </section>
-      <section>
-        <div></div>
+      <section className={Styles.courses}>
+        {courses.map((course, index) => (
+          <Link href="#" key={index} className={Styles.course}>
+            <Image
+              src="/courses-vision.png"
+              alt="vision"
+              width={150}
+              height={150}
+              className={Styles.courseVision}
+            />
+            <div>
+              <h3>{course.title}</h3>
+              <p>{course.duration}</p>
+            </div>
+          </Link>
+        ))}
       </section>
     </main>
   );

@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface ISlide {
   id: string;
   heading?: string;
@@ -130,4 +132,16 @@ export interface IPostsProps {
 
 export interface IBlogArea {
   blogArea: IBlogMeta[];
+}
+
+export interface DashboardLayoutProps {
+  children?: React.ReactNode;
+  title: string;
+  description: string;
+}
+
+export interface ICourses {
+  id: number;
+  title: string;
+  duration: string;
 }

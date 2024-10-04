@@ -64,7 +64,7 @@
     right: -12rem;
 }
 
-.coastTechText h1 {
+.coastTechText h2 {
     font-size: 3.5rem;
     font-weight: 300;
 }
@@ -82,7 +82,6 @@
     width: 100%;
     position: relative;
 }
-
 
 .heroImagesContainer {
     display: flex;
@@ -110,7 +109,7 @@
 
 .vrImage:hover {
     transform: translateY(-1.5rem);
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .hoverText {
@@ -120,7 +119,7 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 1.5rem;
-    opacity: 0;
+    opacity: 0.3;
     transition: opacity 0.5s ease;
     pointer-events: none;
     text-align: center;
@@ -140,6 +139,15 @@
 .coastPacks {
     position: relative;
 }
+
+.IDCard {
+    width: 15rem;
+    height: auto;
+    position: absolute;
+    bottom: -28rem;
+    right: 6rem;
+}
+
 
 @media (max-width: 1100px) {
     .coastTechText {

@@ -122,7 +122,6 @@ ul.nav-links {
   pointer-events: none;
 }
 
-
 .nav-links li,
 .nav-links li .link {
   color: var(--clr-notable);
@@ -232,9 +231,63 @@ header.active .nav-bar .Logo {
     font-size: var(--fs-sm);
   }
 
-
   .nav-links {
     gap: 2rem;
+  }
+
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+  }
+
+  /* Initially hide the dropdown menu */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #610083;
+    /* Same as your header color */
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1000;
+    border-radius: 4px;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Display dropdown menu on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Style individual submenu items */
+  .dropdown-item {
+    padding: 8px 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  .dropdown-item:hover {
+    background-color: white;
+    color: #610083;
+    /* Ensure hover text color matches */
+  }
+
+  /* Styling for the nav links */
+  .nav-link {
+    padding: 10px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    opacity: 0.7;
+  }
+
+  .dropdown-button {
+    display: flex;
   }
 
 }

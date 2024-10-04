@@ -2,7 +2,8 @@
   background-color: var(--clr-service-list);
   padding-block: 3rem;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
+  height: 100%;
 }
 
 .hero-tv {
@@ -48,7 +49,7 @@
 .hero,
 .showcase {
   text-align: center;
-  padding: 5rem;
+  padding: 2rem;
   display: flex;
   align-content: center;
   flex-direction: row-reverse;
@@ -63,13 +64,15 @@
 
 .hero-content h1,
 .showcase-content h1 {
-  font-size: var(--fs-lg);
+  font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   color: var(--primary-text-color);
 }
 
 .hero-content {
-  position: relative;
+  /* position: relative; */
+  z-index: 1;
+  margin-block-start: 18rem;
 }
 
 .hero-content p {
@@ -80,7 +83,18 @@
 }
 
 .hero-content img {
-  border-radius: 2rem;
+  display: none;
+}
+
+body>section>div.parallax__layer.parallax__layer--base>main>div:nth-child(1) {
+  overflow: hidden;
+}
+
+img.our-project {
+  display: block;
+  position: absolute;
+  width: 100%;
+  transform: translateY(10rem);
 }
 
 .brief-services {
@@ -375,6 +389,7 @@ img.client-img {
 
 .programs {
   width: 90%;
+  height: 100%;
   margin: 0rem auto 5rem auto;
   transform: translate(10px, 10px);
 }
@@ -570,6 +585,10 @@ section.testimonials h2 {
     justify-content: flex-start;
   }
 
+  .hero-content {
+    margin-block-start: 28rem;
+  }
+
   .testimonial-slider {
     justify-content: center;
   }
@@ -620,13 +639,22 @@ section.testimonials h2 {
     width: 110rem;
     height: 207%;
     min-height: 293rem;
-    background: url('/hero-background.png') no-repeat center center/cover;
+    background: url('/our_project.gif') no-repeat center center/cover;
     background-origin: border-box;
     background-position: left;
     background-size: contain;
     background-attachment: fixed;
-    opacity: .6;
+    /* opacity: .6; */
     z-index: 2;
+  }
+
+  .hero-content img {
+    border-radius: 2rem;
+    display: block;
+  }
+
+  img.our-project {
+    display: none;
   }
 
   .parallax {

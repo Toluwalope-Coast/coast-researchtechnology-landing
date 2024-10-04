@@ -1,26 +1,9 @@
 import React from "react";
 import style from "./training.module.css";
 import Image from "next/image";
-import Carousel from "@/components/AllCarousel/HeroCarousel/carousel";
-
 import Link from "next/link";
 import { trainingSlides } from "@/lib/data";
 import TrainingCarousel from "@/components/AllCarousel/TrainingCarousel/TrainingCarousel";
-
-// const slides = [
-//   {
-//     image: "/lawal_abdulateef.png",
-//     text: "Slide 1: This is the first slide description.",
-//   },
-//   {
-//     image: "/segun_joseph.png",
-//     text: "Slide 2: Here is some more text for the second slide.",
-//   },
-//   {
-//     image: "/testimonial-1.jpg",
-//     text: "Slide 3: And this is the third slide description.",
-//   },
-// ];
 
 const page = () => {
   return (
@@ -47,10 +30,10 @@ const page = () => {
         </p>
         {/* <div className={style.coastStudent}> */}
         <div className={style.coastTechText}>
-          <h1>
+          <h2>
             Meet <br />
             <span>COASTECH SEGUN</span>
-          </h1>
+          </h2>
           <p>
             Hello World! Connect with us; the global community for designers,
             creative professionals, analysts and developers.
@@ -120,6 +103,14 @@ const page = () => {
           width={1000}
           height={1000}
           className={style.techiePacks}
+        />
+
+        <Image
+          src="/ID-card.png"
+          alt="Coast Research Technology ID Card"
+          width={1000}
+          height={1000}
+          className={style.IDCard}
         />
       </section>
       <section>

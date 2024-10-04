@@ -31,18 +31,17 @@
 }
 
 .slideImage {
-    max-width: 100%;
+    width: 15vw;
     margin-block: 4rem 1rem;
     object-fit: contain;
     height: 30vh;
-    border-radius: 40px;
     position: relative;
     background: var(--clr-secondary-text);
-    width: var(--s);
     margin: var(--m);
     height: calc(var(--s)*1.1547);
     align-content: center;
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    clip-path: polygon(50% 0%, 100% 18%, 100% 82%, 50% 100%, 0% 82%, 0% 18%);
+    object-fit: cover;
     margin-bottom: calc(var(--m) - var(--s)*0.2);
 
 }
@@ -84,7 +83,9 @@
 @media (min-width: 768px) {
     .slideContainer {
         flex-direction: row-reverse;
+        justify-content: space-between;
         height: 100vh;
+        padding: 0 6rem;
     }
 
     .slideImage {

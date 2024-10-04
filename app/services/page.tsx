@@ -15,20 +15,20 @@ const ServicesPage: React.FC = () => {
       ></div>
       <div className="parallax__layer parallax__layer--base">
         <main>
+          <div>
+            <Image
+              src="/our_project2.gif"
+              alt="Code preview"
+              width={250}
+              height={250}
+              className="our-project"
+            />
+          </div>
+
           <section className="hero">
             <div className="hero-content">
-              <h1>
-                BRING YOUR
-                <br />
-                IDEA TO
-                <br />
-                LIVE
-              </h1>
-              <p>
-                LET HELP BUILD YOUR
-                <br />
-                TECH STORY
-              </p>
+              <h1>BRING YOUR IDEA TO LIVE</h1>
+              <p>LET HELP BUILD YOUR TECH STORY</p>
               <Image
                 src="/coast code preview.png"
                 alt="Code preview"
@@ -142,7 +142,9 @@ const ServicesPage: React.FC = () => {
                 </div>
               </div>
             </section>
+          </div>
 
+          <div className="plain-bg">
             <section className="appointment">
               <div className="contact-info">+2358153071297</div>
               <p className="appointment-txt">
@@ -155,6 +157,7 @@ const ServicesPage: React.FC = () => {
               </p>
               <button className="appointment-btn">make appointment</button>
             </section>
+
             <section className="process">
               <h2>OUR PROCESS</h2>
               <h3>

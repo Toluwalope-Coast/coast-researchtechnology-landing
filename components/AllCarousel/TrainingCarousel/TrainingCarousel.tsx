@@ -46,7 +46,7 @@ const TrainingCarousel: React.FC<CarouselProps> = ({ slides }) => {
           <div key={index} className={styles.slide}>
             <div className={styles.slideContainer}>
               <div>
-                <div className={styles.clipPath}></div>
+                {/* <div className={styles.clipPath}></div> */}
                 <Image
                   src={slide.image}
                   alt={`Slide ${index}`}

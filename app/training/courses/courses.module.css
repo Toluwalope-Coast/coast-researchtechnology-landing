@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
 }
 
 .heroSectionContent h1,
@@ -118,6 +119,82 @@
     }
 }
 
+/* Courses Styling */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 9.3rem;
+}
+
+.course {
+    background-color: #f4f4f4;
+    height: 35vh;
+    min-width: 12vw;
+    width: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    padding: 2rem;
+}
+
+.course:hover {
+    box-shadow: 2px 6px 10px #b5b5b5,
+        4px 7px 10px #e4dfdf;
+}
+
+.courseVision {
+    mix-blend-mode: hard-light;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.course:first-child .courseVision {
+    background-color: rgb(255, 0, 0);
+}
+
+.course:nth-child(2) .courseVision {
+    background-color: rgb(0, 170, 0);
+}
+
+.course:nth-child(3) .courseVision {
+    background-color: rgb(255, 166, 0);
+}
+
+.course:nth-child(4) .courseVision {
+    background-color: #610083;
+}
+
+.course:nth-child(5) .courseVision {
+    background-color: rgb(168, 97, 249);
+}
+
+.course:last-child .courseVision {
+    background-color: rgb(0, 0, 255);
+}
+
+
+.course h3 {
+    padding-top: 2.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.course p {
+    padding-block-start: .4rem;
+    font-style: italic;
+    font-weight: 500;
+
+}
+
 @media (max-width: 1124px) {
     .heroSectionContent {
         position: absolute;
@@ -139,12 +216,21 @@
         text-align: center;
         padding-top: 1rem;
     }
+
+    .course {
+        min-width: 15vw;
+        width: 15vw;
+    }
 }
 
 @media (max-width: 950px) {
     .heroSectionVRImage {
         top: 10%;
         left: 3%;
+    }
+
+    .course {
+        width: 20vw;
     }
 }
 
@@ -153,7 +239,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        height: calc(100vh - 4.5rem);
+        height: 100%;
     }
 
     .heroSectionVRImage {
@@ -184,6 +270,16 @@
 
     .heroSectionContent p {
         font-size: 1.5rem;
+        padding-block-end: 4rem;
+    }
+
+    .courses {
+        background-color: #f4f4f4;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        height: 100%;
+        padding-top: 4rem;
+        padding-block-end: 4rem;
     }
 
 }
