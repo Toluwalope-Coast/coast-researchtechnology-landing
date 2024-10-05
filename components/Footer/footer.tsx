@@ -218,13 +218,13 @@ export const Footer = () => {
             </ul>
 
             <div className="social-icons">
-              <Link href="#">
+              <Link href="https://www.facebook.com/coastechy">
                 <FacebookIcon />
               </Link>
-              <Link href="#">
+              <Link href="https://twitter.com/coast_research">
                 <FaXTwitter />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/coastechy">
                 <InstagramIcon />
               </Link>
               <Link href="#">

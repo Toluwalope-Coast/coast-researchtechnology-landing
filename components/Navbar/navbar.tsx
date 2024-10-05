@@ -28,6 +28,14 @@ interface NavLinkData {
 const navLinks: NavLinkData[] = [
   { href: "/", label: "Home" },
   {
+    href: "/training",
+    label: "Training",
+    submenu: [
+      { href: "/training/courses", label: "Courses" },
+      { href: "#", label: "Admission" },
+    ],
+  },
+  {
     href: "",
     label: "About Us",
     submenu: [
@@ -38,14 +46,6 @@ const navLinks: NavLinkData[] = [
   { href: "/contact", label: "Contact Us" },
   { href: "/services", label: "Services" },
   { href: "/career", label: "Career" },
-  {
-    href: "/training",
-    label: "Training",
-    submenu: [
-      { href: "/training/courses", label: "Courses" },
-      { href: "#", label: "Admission" },
-    ],
-  },
   { href: "/coast-craft", label: "Coast Craft" },
 ];
 
@@ -99,7 +99,7 @@ export const Navbar: React.FC = () => {
           <NavLink link={link} />
         </li>
       )),
-    []
+    [],
   );
 
   useEffect(() => {
