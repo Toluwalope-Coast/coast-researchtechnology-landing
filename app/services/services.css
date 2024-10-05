@@ -1,7 +1,7 @@
 .plain-bg {
   background-color: var(--clr-service-list);
-  padding-block: 3rem;
-  position: relative;
+  padding-block: 3rem 1rem;
+  /* position: relative; */
   /* z-index: 2; */
   height: 100%;
 }
@@ -62,9 +62,16 @@
   z-index: 2;
 }
 
+.hero-content h1 {
+  font-size: var(--fs-lg);
+}
+
+.showcase-content h1 {
+  font-size: var(--fs-nm);
+}
+
 .hero-content h1,
 .showcase-content h1 {
-  font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   color: var(--primary-text-color);
 }
@@ -99,16 +106,15 @@ img.our-project {
 
 .brief-services {
   width: 50rem;
-  max-width: 50vw;
+  max-width: 90vw;
   margin: auto;
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding-block: 2rem;
   align-content: center;
   align-items: center;
   justify-content: center;
-  transform: translateX(-5%);
   justify-items: center;
 }
 
@@ -119,7 +125,7 @@ img.our-project {
   max-width: 20rem;
   height: 3rem;
   background: #fff;
-  clip-path: polygon(0 0, 75% 0, 100% 99%, 25% 100%);
+  /* clip-path: polygon(0 0, 75% 0, 100% 99%, 25% 100%); */
   flex: 0 0 100%;
   align-items: center;
   justify-content: center;
@@ -407,6 +413,7 @@ section.appointment {
   padding: 0.5rem;
   border-radius: 1rem;
   color: #717171;
+  margin-block-start: 12rem;
 }
 
 .contact-info {
@@ -518,6 +525,18 @@ section.testimonials h2 {
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   text-transform: uppercase;
+
+}
+
+section.testimonials>p {
+  line-height: 2;
+  padding: .5rem;
+  margin: 1rem;
+  margin-block-end: 2rem;
+  border-radius: 50px;
+  background: var(--body-color);
+  box-shadow: 5px 5px 10px #bebebe,
+    -5px -5px 10px #ffffff;
 }
 
 .testimonial-carousel-cell {
@@ -578,7 +597,7 @@ section.testimonials h2 {
   font-size: var(--fs-sm);
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
 
   .hero,
   .showcase {
@@ -587,6 +606,10 @@ section.testimonials h2 {
 
   .hero-content {
     margin-block-start: 28rem;
+  }
+
+  .showcase-content h1 {
+    font-size: var(--fs-md);
   }
 
   .testimonial-slider {
@@ -600,10 +623,10 @@ section.testimonials h2 {
 
   section.appointment {
     width: 70%;
-    flex-direction: row;
     justify-content: space-between;
     margin: 2rem auto;
     padding: 2rem;
+    margin-block-start: 5rem;
   }
 
   .appointment-btn {
@@ -630,6 +653,12 @@ section.testimonials h2 {
 }
 
 
+@media (min-width: 800px) {
+  section.appointment {
+    margin-block-start: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   #scrolling-image {
     display: block;
@@ -645,7 +674,7 @@ section.testimonials h2 {
     background-size: contain;
     background-attachment: fixed;
     /* opacity: .6; */
-    z-index: 2;
+    /* z-index: 2; */
   }
 
   .hero-content img {
@@ -678,6 +707,27 @@ section.testimonials h2 {
     transform: translateZ(-3px) scale(2.4)
   }
 
+  .brief-services {
+    max-width: 50vw;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    transform: translateX(-5%);
+  }
+
+
+  .tetragon {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 20rem;
+    height: 3rem;
+    background: #fff;
+    clip-path: polygon(0 0, 75% 0, 100% 99%, 25% 100%);
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
   .testimonial-slider {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -685,6 +735,11 @@ section.testimonials h2 {
 
   .hexagon {
     flex: 0 0 calc(25% - 16px);
+  }
+
+  section.appointment {
+    flex-direction: row;
+    margin-block-start: 5rem;
   }
 
   .hero-content {

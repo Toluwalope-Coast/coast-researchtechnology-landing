@@ -149,23 +149,23 @@ export const studentsTestimonial: ITestimonialData[] = [
 ];
 
 export const clientsTestimonial: ITestimonialData[] = [
-  {
-    id: "1",
-    position: 1,
-    image: "/sharp-credit.png",
-    name: "Sharp Credit",
-    text: "",
-    url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
-    ceoName: "Mr. Uche Uwudu, (CEO)",
-  },
+  // {
+  //   id: "1",
+  //   position: 1,
+  //   image: "/sharp-credit.png",
+  //   name: "Sharp Credit",
+  //   text: "",
+  //   url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
+  //   ceoName: "Mr. Uche Uwudu, (CEO)",
+  // },
   {
     id: "2",
     position: 2,
     image: "/Sparkling Wave Investment.png",
     name: "Sparkling Wave Investment Company Limited",
-    text: "",
-    url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
-    ceoName: "Mr. Ernest Christopher, (CEO)",
+    text: "Coast Research Technology exceeded my expectations in every way! Their team is incredibly knowledgeable and professional, always delivering on time with innovative solutions that truly fit our business needs. From start to finish, their customer service was impeccable, and their tech expertise has greatly improved our operations. If you're looking for reliable, top-tier technology services, I highly recommend them! MD, Sparkling Wave Investment Company Limited",
+    url: "https://maps.app.goo.gl/zws276p7MraJiJwC7",
+    ceoName: "Mr. Smart Chris, (CEO)",
   },
 
   {
@@ -177,15 +177,15 @@ export const clientsTestimonial: ITestimonialData[] = [
     url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
     ceoName: "Engr. Vincent Ogboye, (CEO)",
   },
-  {
-    id: "4",
-    position: 4,
-    image: "/Ada-Nsitem.png",
-    name: "Naija Expo",
-    text: "",
-    url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
-    ceoName: "Ada Nsitem, (CEO)",
-  },
+  // {
+  //   id: "4",
+  //   position: 4,
+  //   image: "/Ada-Nsitem.png",
+  //   name: "Naija Expo",
+  //   text: "",
+  //   url: "https://maps.app.goo.gl/JW2G7VNWPRbh17at5",
+  //   ceoName: "Ada Nsitem, (CEO)",
+  // },
 ];
 
 export const trainingSlides: ISlide[] = [
