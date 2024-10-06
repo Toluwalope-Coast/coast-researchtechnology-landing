@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import "./contact.css";
-import Link from "next/link";
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
-import { FaXTwitter } from "react-icons/fa6";
+import Image from 'next/image';
+import React from 'react';
+import './contact.css';
+import Link from 'next/link';
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from 'lucide-react';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const ContactPage: React.FC = () => {
   return (
@@ -30,38 +30,72 @@ const ContactPage: React.FC = () => {
             />
           </div>
           <div className="contact-content">
-            <form>
-              <input type="text" name="name" placeholder="Name" required />
-              <input type="email" name="email" placeholder="Email" required />
-              <textarea
-                name="message"
-                placeholder="Please enter details of your message"
-                required
-              ></textarea>
-              <button className="contact-btn" type="submit">
-                Submit
+            <form className="contact-form">
+              <div className="form-control">
+                <input type="text" required />
+                <label>
+                  <span style={{ transitionDelay: '0ms' }}>En</span>
+                  <span style={{ transitionDelay: '50ms' }}>te</span>
+                  <span style={{ transitionDelay: '100ms' }}>r</span>
+                  <span style={{ transitionDelay: '150ms' }}></span>
+                  <span style={{ transitionDelay: '200ms' }}>n</span>
+                  <span style={{ transitionDelay: '250ms' }}>a</span>
+                  <span style={{ transitionDelay: '300ms' }}>m</span>
+                  <span style={{ transitionDelay: '350ms' }}>e</span>
+                </label>
+              </div>
+
+              <div className="form-control">
+                <input type="text" required />
+                <label>
+                  <span style={{ transitionDelay: '0ms' }}>En</span>
+                  <span style={{ transitionDelay: '50ms' }}>te</span>
+                  <span style={{ transitionDelay: '100ms' }}>r</span>
+                  <span style={{ transitionDelay: '150ms' }}></span>
+                  <span style={{ transitionDelay: '200ms' }}>em</span>
+                  <span style={{ transitionDelay: '250ms' }}>a</span>
+                  <span style={{ transitionDelay: '300ms' }}>i</span>
+                  <span style={{ transitionDelay: '350ms' }}>l</span>
+                </label>
+              </div>
+
+              <div className="form-control">
+                <textarea required></textarea>
+                <label>
+                  <span style={{ transitionDelay: '0ms' }}>En</span>
+                  <span style={{ transitionDelay: '50ms' }}>ter</span>
+                  <span style={{ transitionDelay: '100ms' }}></span>
+                  <span style={{ transitionDelay: '150ms' }}>me</span>
+                  <span style={{ transitionDelay: '200ms' }}>ss</span>
+                  <span style={{ transitionDelay: '250ms' }}>a</span>
+                  <span style={{ transitionDelay: '300ms' }}>g</span>
+                  <span style={{ transitionDelay: '350ms' }}>e</span>
+                </label>
+              </div>
+
+              <button className="submit-btn" type="submit">
+                SUBMIT
               </button>
             </form>
+
             <div className="contact-details">
               <div>
                 <p className="contact-subtitle">GET IN TOUCH</p>
                 <p className="tel-number">+235 807 299 1328</p>
-                {/* <p className="tel-number">+235 819 783 8977</p>
-                                <p className="tel-number">+235 819 783 8977</p> */}
               </div>
               <div>
                 <p className="contact-subtitle">Follow us on</p>
                 <div className="social">
-                  <Link href="#">
+                  <Link href="#" aria-label="Facebook">
                     <FacebookIcon />
                   </Link>
-                  <Link href="#">
+                  <Link href="#" aria-label="X (Twitter)">
                     <FaXTwitter />
                   </Link>
-                  <Link href="#">
+                  <Link href="#" aria-label="Instagram">
                     <InstagramIcon />
                   </Link>
-                  <Link href="#">
+                  <Link href="#" aria-label="LinkedIn">
                     <LinkedinIcon />
                   </Link>
                 </div>
@@ -75,6 +109,8 @@ const ContactPage: React.FC = () => {
             width="800"
             height="400"
             loading="lazy"
+            aria-hidden="false"
+            tabIndex="0"
           ></iframe>
         </div>
       </section>
