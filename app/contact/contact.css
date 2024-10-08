@@ -11,11 +11,12 @@
   font-weight: var(--fw-bold);
   color: var(--primary-text-color);
   text-transform: uppercase;
+  margin-block: 7rem 12rem;
 }
 
 .attach {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   align-items: center;
   margin-bottom: 20px;
@@ -26,6 +27,22 @@
   display: none;
 }
 
+.headset-mobile {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  height: auto;
+  mix-blend-mode: hard-light;
+  top: 5rem;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  z-index: 2;
+  justify-content: center;
+}
+
+.headset-mobile img {
+  max-width: 25rem;
+}
+
 .contact-content {
   width: 90%;
 }
@@ -34,7 +51,7 @@
   position: relative;
   height:;
   width: 100%;
-  padding: 5rem;
+  padding: 5rem 2rem;
   background-color: var(--body-color);
   border-radius: 4px;
   color: #333;
@@ -178,6 +195,34 @@ iframe {
   mix-blend-mode: luminosity;
 }
 
+@keyframes heartbeat {
+  from {
+    transform: scaleY(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    transform: scaleY(0.91);
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    transform: scaleY(0.98);
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    transform: 0.87;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    transform: scaleY(1);
+    animation-timing-function: ease-out;
+  }
+}
+
 @media (min-width: 768px) {
   .contact-container {
     position: relative;
@@ -187,50 +232,6 @@ iframe {
     margin-top: 8rem;
     font-size: var(--fs-lg-pc);
     /* z-index: 3; */
-  }
-
-  .phone,
-  .headset {
-    display: inline;
-    position: absolute;
-    width: 100%;
-    max-width: 25rem;
-    height: auto;
-    mix-blend-mode: hard-light;
-  }
-
-  .phone {
-    left: 0;
-    top: -5.1rem;
-    animation: swirl-in-top-fwd 1.2s ease-out both;
-  }
-
-  .headset {
-    right: 0;
-    top: -5.1rem;
-    animation: heartbeat 1.5s ease-in-out infinite both;
-  }
-
-  .contact-content {
-    display: flex;
-    width: 80%;
-    gap: 3rem;
-    margin: auto;
-    margin-top: 13rem;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .contact-details {
-    display: flex;
-    width: 100%;
-    max-width: 20rem;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    align-self: baseline;
-    gap: 2rem;
   }
 
   p.contact-subtitle {
@@ -245,6 +246,22 @@ iframe {
 
   .social a {
     font-size: 1.5em;
+  }
+
+  .contact-form {
+    padding: 5rem;
+  }
+
+  .headset-mobile img {
+    max-width: 35rem;
+  }
+
+  .headset-mobile {
+    top: 0;
+  }
+
+  .contact-content {
+    margin-block-start: 5rem;
   }
 
   @keyframes swirl-in-top-fwd {
@@ -290,8 +307,56 @@ iframe {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   p.tel-number {
     font-size: 1.3rem;
+  }
+
+  .contact-content {
+    display: flex;
+    width: 80%;
+    gap: 3rem;
+    margin: auto;
+    margin-top: 13rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-details {
+    display: flex;
+    width: 100%;
+    max-width: 20rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: baseline;
+    gap: 2rem;
+  }
+
+  .phone,
+  .headset {
+    display: inline;
+    position: absolute;
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    mix-blend-mode: hard-light;
+  }
+
+  .phone {
+    left: 0;
+    top: -5.1rem;
+    animation: swirl-in-top-fwd 1.2s ease-out both;
+  }
+
+  .headset {
+    right: 0;
+    top: -5.1rem;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+
+  .headset-mobile {
+    display: none;
   }
 }

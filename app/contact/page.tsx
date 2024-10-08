@@ -28,6 +28,14 @@ const ContactPage: React.FC = () => {
               width={1000}
               height={1000}
             />
+            <div className="headset-mobile">
+              <Image
+                src="/headset-mobile.png"
+                alt="Headset"
+                width={1000}
+                height={1000}
+              />
+            </div>
           </div>
           <div className="contact-content">
             <form className="contact-form">
