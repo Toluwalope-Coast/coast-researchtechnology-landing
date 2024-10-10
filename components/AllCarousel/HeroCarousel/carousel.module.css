@@ -43,13 +43,14 @@
   color: var(--primary-text-color);
   font-size: var(--fs-nm);
   font-weight: bold;
-  margin-block-start: 0.5rem;
+  /*  margin-block-start: 0.5rem;*/
   padding-block: 0.5rem;
   text-align: left;
+  font-style: italic;
 }
 
 .tip a {
-  color: #000;
+  /*  color: #000;*/
   font-weight: 200;
   border-inline-start: 1px solid var(--primary-text-color);
   padding-inline: 0.5rem;
@@ -98,7 +99,7 @@
 
   .slideHead {
     font-size: var(--fs-xl);
-    padding-block-end: 1.5rem;
+    padding-block-end: 1rem;
     text-align: left;
   }
 }

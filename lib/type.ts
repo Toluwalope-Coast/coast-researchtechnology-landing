@@ -4,7 +4,7 @@ export interface ISlide {
   id: string;
   heading?: string;
   text: string;
-  Link?: string;
+  link?: string;
   url?: string;
   image: string;
   tip?: string;
