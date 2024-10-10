@@ -1,13 +1,13 @@
 /** @format */
 
-"use client";
-import Link from "next/link";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
-import { useState, useMemo, useEffect } from "react";
-import Image from "next/image";
-import { Menu, Moon, Sun, X } from "lucide-react";
-import { FaCaretDown } from "react-icons/fa";
-import "./navbar.css";
+'use client';
+import Link from 'next/link';
+import { useAutoAnimate } from '@formkit/auto-animate/react';
+import { useState, useMemo, useEffect } from 'react';
+import Image from 'next/image';
+import { Menu, Moon, Sun, X } from 'lucide-react';
+import { FaCaretDown } from 'react-icons/fa';
+import './navbar.css';
 
 import {
   Dropdown,
@@ -15,7 +15,7 @@ import {
   DropdownMenu,
   DropdownItem,
   Button,
-} from "@nextui-org/react";
+} from '@nextui-org/react';
 
 // Define the type for navigation links
 interface NavLinkData {
@@ -26,27 +26,27 @@ interface NavLinkData {
 
 // Define the data for the navigation links, including submenus
 const navLinks: NavLinkData[] = [
-  { href: "/", label: "Home" },
+  { href: '/', label: 'Home' },
   {
-    href: "/training",
-    label: "Training",
+    href: '/training',
+    label: 'Training',
     submenu: [
-      { href: "/training/courses", label: "Courses" },
-      { href: "#", label: "Admission" },
+      { href: '/training/courses', label: 'Courses' },
+      { href: '#', label: 'Admission' },
     ],
   },
   {
-    href: "",
-    label: "About Us",
+    href: '',
+    label: 'About Us',
     submenu: [
-      { href: "/about-us/our-vision", label: "Our Vision" },
-      { href: "/about-us/our-mission", label: "Our Mission" },
+      { href: '/about-us/our-vision', label: 'Our Vision' },
+      { href: '/about-us/our-mission', label: 'Our Mission' },
     ],
   },
-  { href: "/contact", label: "Contact Us" },
-  { href: "/services", label: "Services" },
-  { href: "/career", label: "Career" },
-  { href: "/coast-craft", label: "Coast Craft" },
+  { href: '/contact', label: 'Contact Us' },
+  { href: '/services', label: 'Services' },
+  { href: '/career', label: 'Career' },
+  { href: '/coast-craft', label: 'Coast Craft' },
 ];
 
 // Component for individual navigation links or dropdown triggers
@@ -99,29 +99,29 @@ export const Navbar: React.FC = () => {
           <NavLink link={link} />
         </li>
       )),
-    [],
+    []
   );
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    const isDark = savedTheme === "dark";
+    const savedTheme = localStorage.getItem('theme');
+    const isDark = savedTheme === 'dark';
     if (isDark) {
-      document.body.classList.add("dark");
+      document.body.classList.add('dark');
     }
     setIsDarkMode(isDark);
   }, []);
 
   const toggleTheme = () => {
-    document.body.classList.toggle("dark");
-    const currentTheme = document.body.classList.contains("dark")
-      ? "dark"
-      : "light";
-    localStorage.setItem("theme", currentTheme);
-    setIsDarkMode(currentTheme === "dark"); // Update state based on the theme
+    document.body.classList.toggle('dark');
+    const currentTheme = document.body.classList.contains('dark')
+      ? 'dark'
+      : 'light';
+    localStorage.setItem('theme', currentTheme);
+    setIsDarkMode(currentTheme === 'dark'); // Update state based on the theme
   };
 
   return (
-    <header className={`${showMenu ? "active" : ""}`}>
+    <header className={`${showMenu ? 'active' : ''}`}>
       <nav className="nav-bar">
         {/* Menu hamburger */}
         <button onClick={toggleMenu}>

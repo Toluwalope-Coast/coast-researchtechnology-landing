@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface ISlide {
   id: string;
@@ -7,9 +7,9 @@ export interface ISlide {
   Link?: string;
   url?: string;
   image: string;
-  title?: string;
+  tip?: string;
   position?: string;
-  name?: string;
+  linkText?: string;
 }
 
 export interface ICarouselItem {

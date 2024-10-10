@@ -1,15 +1,19 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import Slider from "react-slick";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import styles from "./carousel.module.css";
-import Image from "next/image";
+import React, { useRef } from 'react';
+import Slider from 'react-slick';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import styles from './carousel.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface Slide {
   image: string;
   heading?: string;
   text: string;
+  tip: string;
+  linkText: string;
+  link: string;
 }
 
 interface CarouselProps {
@@ -54,6 +58,9 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
               <div className={styles.slideContent}>
                 <h2 className={styles.slideHead}>{slide.heading}</h2>
                 <div className={styles.slideText}>{slide.text}</div>
+                <div className={styles.tip}>
+                  {slide.tip} <Link href={slide.link}>{slide.linkText}</Link>
+                </div>
               </div>
             </div>
           </div>
