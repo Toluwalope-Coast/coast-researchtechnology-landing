@@ -8,14 +8,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface Slide {
-  id: string;
-  heading?: string;
+  heading: string;
   text: string;
-  url?: string;
+  url: string;
   image: string;
-  tip?: string;
-  position?: string;
-  linkText?: string;
+  tip: string;
+  linkText: string;
 }
 
 interface CarouselProps {
