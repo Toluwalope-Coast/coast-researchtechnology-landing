@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 
 export interface ISlide {
   id: string;
+  name?: string;
   heading?: string;
   text: string;
   // link?: string;
