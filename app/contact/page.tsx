@@ -30,7 +30,7 @@ const ContactPage: React.FC = () => {
             />
           </div>
           <div className="contact-content">
-            <form>
+            {/* <form>
               <input type="text" name="name" placeholder="Name" required />
               <input type="email" name="email" placeholder="Email" required />
               <textarea
@@ -41,7 +41,20 @@ const ContactPage: React.FC = () => {
               <button className="contact-btn" type="submit">
                 Submit
               </button>
+            </form> */}
+
+            <form>
+              <div className="input-container">
+                <input
+                  placeholder="Enter text"
+                  className="input-field"
+                  type="text"
+                />
+                <label className="input-label">Enter text</label>
+                <span className="input-highlight"></span>
+              </div>
             </form>
+
             <div className="contact-details">
               <div>
                 <p className="contact-subtitle">GET IN TOUCH</p>
