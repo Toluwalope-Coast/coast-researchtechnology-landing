@@ -11,7 +11,6 @@ interface Slide {
   id: string;
   heading?: string;
   text: string;
-  // link?: string;
   url?: string;
   image: string;
   tip?: string;
