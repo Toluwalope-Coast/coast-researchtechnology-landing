@@ -15,7 +15,7 @@ export const slides: ISlide[] = [
     text: 'Custom software development tailored to your business needs.',
     tip: 'Unlock Growth',
     linkText: 'Learn more about our solutions',
-    link: '/services',
+    url: '/services',
   },
   {
     id: '2',
@@ -24,16 +24,16 @@ export const slides: ISlide[] = [
     text: 'A seamless platform for managing loan requests, disbursements, and repayments via USSD or web.',
     tip: 'Discover Coastlink24',
     linkText: 'See how it works.',
-    link: 'www.coastresearchtechnology.com.ng',
+    url: 'www.coastresearchtechnology.com.ng',
   },
   {
     id: '3',
-    image: '/craft.png',
+    image: '/lend-asset.png',
     heading: 'LendAsset API – Connecting Asset Providers and Lenders',
     text: 'An API platform designed to link asset providers and lenders effortlessly.',
     tip: 'Explore LendAsset',
     linkText: 'Integrate with ease.',
-    link: 'www.coastresearchtechnology.com.ng',
+    url: 'www.coastresearchtechnology.com.ng',
   },
   {
     id: '4',
@@ -42,7 +42,7 @@ export const slides: ISlide[] = [
     text: 'Hands-on training programs designed to equip you with industry-leading skills.',
     tip: 'Get Trained',
     linkText: 'Explore our courses.',
-    link: '/trainings',
+    url: '/trainings',
   },
   {
     id: '5',
@@ -51,7 +51,7 @@ export const slides: ISlide[] = [
     text: 'Find the right candidates to drive your business forward.',
     tip: 'Hire the Best',
     linkText: 'Start your search now.',
-    link: '/career',
+    url: '/career',
   },
   {
     id: '6',
@@ -60,7 +60,7 @@ export const slides: ISlide[] = [
     text: 'Your hub for tech news, tips, and trends.',
     tip: 'Read the Latest',
     linkText: 'Visit our blog.',
-    link: '/coast-craft',
+    url: '/coast-craft',
   },
 ];
 

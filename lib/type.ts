@@ -4,7 +4,7 @@ export interface ISlide {
   id: string;
   heading?: string;
   text: string;
-  link?: string;
+  // link?: string;
   url?: string;
   image: string;
   tip?: string;
@@ -31,7 +31,7 @@ export interface ITestimonialData {
   name: string;
   ceoName?: string;
   isActive?: boolean;
-  height?: number; // Define height prop
+  height?: number;
 }
 
 export interface ITestimonialsProps {
