@@ -20,6 +20,7 @@ section.career {
 }
 
 .career-text h2 {
+  font-family: var(--ff-head);
   text-align: center;
   line-height: 4rem;
 }
