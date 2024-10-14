@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React, { useRef, useState, useEffect } from "react";
-import Slider from "react-slick";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import styles from "./TestimonialCarousel.module.css";
-import Image from "next/image";
-import Link from "next/link";
+import React, { useRef, useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import styles from './TestimonialCarousel.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface Slide {
   image: string;
@@ -29,10 +29,10 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
   }, []);
 
   useEffect(() => {
-    if (isMounted && typeof window !== "undefined") {
+    if (isMounted && typeof window !== 'undefined') {
       // Check the current path using window.location.pathname
       const currentPath = window.location.pathname;
-      if (currentPath === "/services") {
+      if (currentPath === '/services') {
         setIsServicesPage(true);
       }
     }
@@ -41,7 +41,7 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -49,14 +49,14 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          // slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          // slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
@@ -80,9 +80,9 @@ const TestimonialCarousel: React.FC<CarouselProps> = ({ slides }) => {
 
   // Function to truncate text to 30 words
   const truncateText = (text: string, wordLimit: number) => {
-    const words = text.split(" ");
+    const words = text.split(' ');
     return words.length > wordLimit
-      ? words.slice(0, wordLimit).join(" ") + "... Read More"
+      ? words.slice(0, wordLimit).join(' ') + '... Read More'
       : text;
   };
 
