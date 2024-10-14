@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import React from "react";
-import styles from "./footer.module.css";
-import "./footer.css";
-import Image from "next/image";
+import Link from 'next/link';
+import React from 'react';
+import styles from './footer.module.css';
+import './footer.css';
+import Image from 'next/image';
 import {
   FacebookIcon,
   InstagramIcon,
@@ -14,10 +14,10 @@ import {
   MapPinIcon,
   PhoneIcon,
   Twitter,
-} from "lucide-react";
-import { FaXTwitter } from "react-icons/fa6";
-import { disableNavWithFooter } from "@/utils/disableNavWithFooter";
-import { usePathname } from "next/navigation";
+} from 'lucide-react';
+import { FaXTwitter } from 'react-icons/fa6';
+import { disableNavWithFooter } from '@/utils/disableNavWithFooter';
+import { usePathname } from 'next/navigation';
 
 export const Footer = () => {
   const path = usePathname();
@@ -195,7 +195,7 @@ export const Footer = () => {
           <div className="footer-content">
             <ul className="footer-nav">
               <li role="listitem">
-                <Link href="/index">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li role="listitem">
                 <Link href="/about">About us</Link>
@@ -210,21 +210,21 @@ export const Footer = () => {
                 <Link href="/contact">Contact us</Link>
               </li>
               <li role="listitem">
-                <Link href="#">Training</Link>
+                <Link href="/training">Training</Link>
               </li>
               <li role="listitem">
-                <Link href="#">Coast Craft</Link>
+                <Link href="/coast-craft">Coast Craft</Link>
               </li>
             </ul>
 
             <div className="social-icons">
-              <Link href="#">
+              <Link href="https://www.facebook.com/coastechy">
                 <FacebookIcon />
               </Link>
-              <Link href="#">
+              <Link href="https://twitter.com/coast_research">
                 <FaXTwitter />
               </Link>
-              <Link href="#">
+              <Link href="https://www.instagram.com/coastechy">
                 <InstagramIcon />
               </Link>
               <Link href="#">

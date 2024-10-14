@@ -1,174 +1,178 @@
 section.career {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
 }
 
 .career-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-    font-family: var(--ff-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  font-family: var(--ff-primary);
 }
 
 .career-search {
-    color: var(--clr-primary-dark-purple);
-    align-items: center;
+  color: var(--clr-primary-dark-purple);
+  align-items: center;
 }
 
 .career-text h2 {
-    text-align: center;
-    line-height: 4rem;
+  text-align: center;
+  line-height: 4rem;
 }
 
 .career-search h2 {
-    font-size: var(--fs-lg);
-    font-weight: var(--fw-bold);
-    color: var(--primary-text-color);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--primary-text-color);
 }
 
 p.toggle-h2 {
-    color: var(--clr-paragraph);
-    font-weight: var(--fw-medium);
+  color: var(--clr-paragraph);
+  font-weight: var(--fw-medium);
 }
 
 .career-seat img {
-    mix-blend-mode: hard-light;
-    margin-top: 2rem;
+  mix-blend-mode: hard-light;
+  margin-top: 2rem;
 }
 
 .form button {
-    border: none;
-    background: none;
-    color: #8b8ba7;
+  border: none;
+  background: none;
+  color: #8b8ba7;
 }
 
 /* styling of whole input container */
 
 .form {
-    --timing: 0.3s;
-    --width-of-input: 300px;
-    --height-of-input: 40px;
-    --border-height: 2px;
-    --input-bg: #fff;
-    --border-color: var(--clr-primary-bright-purple);
-    --border-radius: 30px;
-    --after-border-radius: 1px;
-    position: relative;
-    width: var(--width-of-input);
-    height: var(--height-of-input);
-    display: flex;
-    align-items: center;
-    padding-inline: 0.8em;
-    border-radius: var(--border-radius);
-    transition: border-radius 0.5s ease;
-    /* background: var(--input-bg, #6d5151); */
-    border: 1px solid #fff;
+  --timing: 0.3s;
+  --width-of-input: 300px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: var(--clr-primary-bright-purple);
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  /* background: var(--input-bg, #6d5151); */
+  border: 1px solid #fff;
 }
 
 /* styling of Input */
 .text-input {
-    font-size: 0.9rem;
-    background-color: var(--body-color);
-    width: 100%;
-    height: 100%;
-    padding-inline: 0.5em;
-    padding-block: 0.7em;
-    margin: -2.5rem 0rem;
-    border: none;
+  font-size: 0.9rem;
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  margin: -2.5rem 0rem;
+  border: none;
 }
 
 /* styling of animated border */
 .form:before {
-    content: "";
-    position: absolute;
-    background: var(--border-color);
-    transform: scaleX(0);
-    transform-origin: center;
-    width: 100%;
-    height: var(--border-height);
-    left: 0;
-    bottom: 0;
-    border-radius: 1px;
-    transition: transform var(--timing) ease;
+  content: '';
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
 }
 
 /* Hover on Input */
 .form:focus-within {
-    border-radius: var(--after-border-radius);
+  border-radius: var(--after-border-radius);
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 /* here is code of animated border */
 .form:focus-within:before {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 /* styling of close button */
 /* == you can click the close button to remove text == */
 .reset {
-    border: none;
-    background: none;
-    opacity: 0;
-    visibility: hidden;
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* close button shown when typing */
-input:not(:placeholder-shown)~.reset {
-    opacity: 1;
-    visibility: visible;
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* sizing svg icons */
 .form svg {
-    width: 17px;
-    margin-left: 12rem;
-    position: relative;
+  /* width: 17px; */
+  /* margin-left: 12rem; */
+  position: relative;
+  left: 8rem;
+  top: -0.25rem;
 }
 
 form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.2rem;
-    padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1rem;
 }
 
 .btn-contact {
-    --clr-font-main: hsla(0 0% 20% / 100);
-    --btn-bg-1: hsla(284 64% 19% / 1);
-    --btn-bg-2: rgb(112, 74, 126);
-    --btn-bg-color: rgb(247, 245, 247);
-    --radii: 0.5em;
-    cursor: pointer;
-    padding: 0.3em 1.2em;
-    min-width: 120px;
-    min-height: 44px;
-    font-size: var(--fs-nm);
-    font-family: var(--ff-primary), system-ui, sans-serif;
-    font-weight: 500;
-    transition: 0.8s;
-    background-size: 280% auto;
-    background-image: linear-gradient(325deg,
-      var(--btn-bg-2) 0%,
-      var(--btn-bg-1) 55%,
-      var(--btn-bg-2) 90%);
-    border: none;
-    border-radius: var(--radii);
-    color: var(--btn-bg-color);
-    box-shadow: 0px 0px 20px rgba(60, 25, 88, 0.5),
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(284 64% 19% / 1);
+  --btn-bg-2: rgb(112, 74, 126);
+  --btn-bg-color: rgb(247, 245, 247);
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.3em 1.2em;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: var(--fs-nm);
+  font-family: var(--ff-primary), system-ui, sans-serif;
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    var(--btn-bg-2) 0%,
+    var(--btn-bg-1) 55%,
+    var(--btn-bg-2) 90%
+  );
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow:
+    0px 0px 20px rgba(60, 25, 88, 0.5),
     0px 5px 5px -1px rgba(80, 42, 90, 0.25),
     inset 4px 4px 8px rgba(31, 6, 34, 0.19),
     inset -4px -4px 8px rgba(132, 39, 161, 0.879);
-    animation: bounce-btn .9s both;
+  animation: bounce-btn 0.9s both;
 }
-
 
 .btn-contact:hover {
   background-position: right top;
@@ -176,7 +180,9 @@ form {
 
 .btn-contact:is(:focus, :focus-visible, :active) {
   outline: none;
-  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  box-shadow:
+    0 0 0 3px var(--btn-bg-color),
+    0 0 0 6px var(--btn-bg-2);
 }
 
 @keyframes bounce-btn {
@@ -225,40 +231,36 @@ form {
   }
 }
 
-
-
-
 @media (min-width: 768px) {
-    .career-seat img {
-        transform: translateX(15px);
-        margin-top: 1rem;
-    }
+  .career-seat img {
+    transform: translateX(15px);
+    margin-top: 1rem;
+  }
 
-    .career-text {
-        display: flex;
-        gap: 1rem;
-    }
+  .career-text {
+    display: flex;
+    gap: 1rem;
+  }
 
-    .career-text h2 {
-        font-size: var(--fs-lg-pc);
-        width: max-content;
-    }
+  .career-text h2 {
+    font-size: var(--fs-lg-pc);
+    width: max-content;
+  }
 
-    form {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        max-width: 60%;
-    }
+  form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 1024px) {
+  section.career {
+    flex-direction: row;
+  }
 
-    section.career {
-        flex-direction: row;
-    }
-
-    .career-seat img {
-        transform: translateX(0);
-    }
+  .career-seat img {
+    transform: translateX(0);
+  }
 }

@@ -1,15 +1,15 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export interface ISlide {
   id: string;
   heading?: string;
   text: string;
-  Link?: string;
+  // link?: string;
   url?: string;
   image: string;
-  title?: string;
+  tip?: string;
   position?: string;
-  name?: string;
+  linkText?: string;
 }
 
 export interface ICarouselItem {
@@ -31,7 +31,7 @@ export interface ITestimonialData {
   name: string;
   ceoName?: string;
   isActive?: boolean;
-  height?: number; // Define height prop
+  height?: number;
 }
 
 export interface ITestimonialsProps {
