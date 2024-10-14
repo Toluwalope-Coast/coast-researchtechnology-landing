@@ -8,12 +8,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 interface Slide {
-  heading: string;
+  id: string;
+  heading?: string;
   text: string;
-  url: string;
+  // link?: string;
+  url?: string;
   image: string;
-  tip: string;
-  linkText: string;
+  tip?: string;
+  position?: string;
+  linkText?: string;
 }
 
 interface CarouselProps {
@@ -59,7 +62,8 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                 <h2 className={styles.slideHead}>{slide.heading}</h2>
                 <div className={styles.slideText}>{slide.text}</div>
                 <div className={styles.tip}>
-                  {slide.tip} <Link href={slide.url}>{slide.linkText}</Link>
+                  {slide.tip}{' '}
+                  <Link href={slide.url || '#'}> {slide.linkText} </Link>
                 </div>
               </div>
             </div>

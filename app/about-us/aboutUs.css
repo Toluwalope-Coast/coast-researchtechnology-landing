@@ -3,7 +3,12 @@
   flex-direction: column;
   /* position: relative; */
   background: rgb(217, 217, 217);
-  background: radial-gradient(circle, var(--clr-about-gradient1) 0%, var(--clr-about-gradient2) 58%, var(--clr-about-gradient3) 75%);
+  background: radial-gradient(
+    circle,
+    var(--clr-about-gradient1) 0%,
+    var(--clr-about-gradient2) 58%,
+    var(--clr-about-gradient3) 75%
+  );
   justify-content: space-between;
 }
 
@@ -28,6 +33,7 @@
 }
 
 .hero-space h1 {
+  font-family: var(--ff-head);
   font-size: var(--fs-lg);
   font-weight: var(--fw-bold);
   text-align: center;
@@ -36,7 +42,7 @@
 .read-more-btn {
   border: 1px solid var(--primary-text-color);
   color: var(--primary-text-color);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   position: relative;
   overflow: hidden;
   transition: all 150ms ease-in-out;
@@ -73,7 +79,7 @@
 .read-more-btn:hover {
   border: 1px solid var(--primary-text-color);
   color: var(--body-color);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   line-height: 1rem;
 }
 
@@ -93,7 +99,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.);
+  background: rgba(0, 0, 0, 0);
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
@@ -150,11 +156,11 @@
   background: var(--clr-secondary-text);
   width: var(--s);
   margin: var(--m);
-  height: calc(var(--s)*1.1547);
+  height: calc(var(--s) * 1.1547);
   display: inline-block;
   align-content: center;
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-  margin-bottom: calc(var(--m) - var(--s)*0.2);
+  margin-bottom: calc(var(--m) - var(--s) * 0.2);
 }
 
 .readmore-hexagon:before {
@@ -185,12 +191,14 @@
 }
 
 .readmore-hexagon-container:before {
-  content: "";
-  width: calc(var(--s)/2 + var(--m));
+  content: '';
+  width: calc(var(--s) / 2 + var(--m));
   float: left;
   height: 120%;
-  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
-      #000 0 var(--f));
+  shape-outside: repeating-linear-gradient(
+    #0000 0 calc(var(--f) - 3px),
+    #000 0 var(--f)
+  );
 }
 
 .teams h2 {
@@ -237,12 +245,12 @@
 }
 
 .coreValues h2 {
+  font-family: var(--ff-head);
   font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   padding-block: 1rem;
   text-align: center;
 }
-
 
 .hero-space p,
 .coreValues p {
@@ -304,14 +312,10 @@ section.teams {
   color: var(--primary-text-color);
 }
 
-
 .team-carousel-cell p {
   color: #ffffff;
   font-size: var(--fs-sm);
 }
-
-
-
 
 #toggle-icon:hover {
   cursor: pointer;
@@ -340,7 +344,6 @@ section.teams {
     font-size: var(--fs-lg);
     font-weight: var(--fw-bold);
   }
-
 
   .hero-space p,
   .coreValues p {

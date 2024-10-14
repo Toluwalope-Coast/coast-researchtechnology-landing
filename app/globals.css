@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap');
 
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
@@ -12,11 +13,8 @@
   display: none !important;
 }
 
-
-
 @layer base {
   :root {
-
     /* --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     
@@ -47,10 +45,9 @@
     
     --radius: 0.5rem; */
 
-
-    --body-color: #D9D9D9;
+    --body-color: #d9d9d9;
     --nav-color: transparent;
-    --side-nav: #BFBBBB;
+    --side-nav: #bfbbbb;
     --primary-text-color: #610083;
     --clr-secondary-text: #717171;
     --plain-color: #ffffff;
@@ -68,40 +65,39 @@
     --clr-side-drawer: #cccccccf;
     --clr-testimonial: #ffffff80;
 
-
     --clr-training-primary: #590366;
-    --clr-training-text-color: #C41DFF;
+    --clr-training-text-color: #c41dff;
     --trending-news-bg: #eedefb;
-
 
     --fw-regular: 400;
     --fw-medium: 500;
     --fw-bold: 700;
     --fs-xs: 0.5rem;
-    --fs-sm: .8rem;
+    --fs-sm: 0.8rem;
     --fs-nm: 1rem;
     --fs-md: 1.5rem;
     --fs-lg: 2.4rem;
     --fs-xl: 3rem;
     --fs-lg-pc: 4rem;
-
-
+    --ff-head: 'Spectral', serif;
 
     scroll-behavior: smooth;
     --color-dark: #35203b;
     --color-primary: #500480;
     --color-white: #ffffff;
     --color-text-gray: hsl(0, 0%, 25%);
-    --bg-gradient: linear-gradient(90deg,
-        #35203b -118.5%,
-        var(--color-primary) 100%);
+    --bg-gradient: linear-gradient(
+      90deg,
+      #35203b -118.5%,
+      var(--color-primary) 100%
+    );
   }
 
   .dark {
     --body-color: #3e114e;
     --nav-color: transparent;
     --side-nav: #242526;
-    --primary-text-color: #DFDFDF;
+    --primary-text-color: #dfdfdf;
     --plain-color: #bfbbbb;
     --clr-secondary: #df80ff;
     --clr-about-wrapper: #df80ff;
@@ -113,7 +109,7 @@
     --clr-about-gradient1: #df80ff;
     --clr-about-gradient2: var(--primary-text-color);
     --clr-about-gradient3: #3e114e;
-    --clr-paragraph: #DF80FF;
+    --clr-paragraph: #df80ff;
     --clr-notable: var(--plain-color);
     --clr-side-drawer: #270739e6;
     --clr-testimonial: #df80ff47;
@@ -194,14 +190,15 @@
   box-sizing: border-box;
   /* font-family: 'Inter', sans-serif; */
   transition: all 0.4s ease;
-  ;
 }
 
 body {
   background-color: var(--body-color);
   text-rendering: optimizeSpeed;
-  transition: background-color 0.3s, color 0.3s;
-  font-family: "Tight", sans-serif;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  font-family: 'Tight', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -211,7 +208,7 @@ body.dark {
   --body-color: #3e114e;
   --nav-color: transparent;
   --side-nav: #242526;
-  --primary-text-color: #DFDFDF;
+  --primary-text-color: #dfdfdf;
   --plain-color: #bfbbbb;
   --clr-secondary: #df80ff;
   --clr-footer-upper-shadow: #800080;
@@ -222,26 +219,24 @@ body.dark {
   --clr-about-gradient1: #df80ff;
   --clr-about-gradient2: #610083;
   --clr-about-gradient3: #3e114e;
-  --clr-paragraph: #DF80FF;
+  --clr-paragraph: #df80ff;
   --clr-notable: var(--color-white);
   --clr-side-drawer: #270739e6;
   --clr-testimonial: #df80ff47;
 
   --clr-hero-services: #000;
 
-  --clr-training-gradient: radial-gradient(#C41DFF 25%, #590366 70%);
+  --clr-training-gradient: radial-gradient(#c41dff 25%, #590366 70%);
 }
-
 
 #scrolling-image {
   display: none;
 }
 
-
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
   padding: 1rem 0;
 }
@@ -255,7 +250,7 @@ html:focus-within {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .visually-hidden {
@@ -343,9 +338,6 @@ html:focus-within {
 .first-section {
   margin-block-start: 4.5rem;
 }
-
-
-
 
 @layer base {
   * {

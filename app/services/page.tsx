@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import "./services.css";
-import { clientsTestimonial, reviews, testimonial } from "@/lib/data";
-import TestimonialCarousel from "@/components/AllCarousel/TestimonialCarousel/TestimialCarousel";
+import Image from 'next/image';
+import React from 'react';
+import './services.css';
+import { clientsTestimonial, reviews, testimonial } from '@/lib/data';
+import TestimonialCarousel from '@/components/AllCarousel/TestimonialCarousel/TestimialCarousel';
 
 const ServicesPage: React.FC = () => {
   return (
@@ -40,7 +40,7 @@ const ServicesPage: React.FC = () => {
 
           <section className="showcase">
             <div className="showcase-content">
-              <h1>Experience Unparalleled Tech Solutions with COAST</h1>
+              <h2>Experience Unparalleled Tech Solutions with COAST</h2>
               <div className="brief-services">
                 <div className="tetragon">
                   <div className="tetra-content">Software Development</div>
