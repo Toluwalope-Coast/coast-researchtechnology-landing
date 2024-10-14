@@ -163,6 +163,7 @@
 
 .aboutHeader,
 .servicesHeader {
+  color: var(--primary-text-color);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -171,10 +172,11 @@
 .aboutHeading,
 .servicesHeading,
 .testimonialHeading {
+  font-family: var(--ff-head);
   font-size: var(--fs-lg);
   font-weight: var(--fw-medium);
   text-transform: capitalize;
-  color: var(--clr-hero-services);
+  color: var(--primary-text-color);
 }
 
 .aboutHeading .graphic,
@@ -224,7 +226,6 @@
   gap: 2rem;
 }
 
-
 .card {
   flex: 0 1 50%;
 }
@@ -236,7 +237,6 @@
 .cardHeader {
   width: 100%;
   margin-block-end: 1rem;
-  color: var(--clr-hero-services);
 }
 
 .cardBody {
@@ -246,11 +246,11 @@
 }
 
 .cardHeading {
+  font-family: var(--ff-head);
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--clr-hero-services);
+  color: var(--primary-text-color);
 }
-
 
 @media (max-width: 768px) {
   .servicesCards {
@@ -266,10 +266,7 @@
   .testimonialHeading {
     font-size: var(--fs-nm);
   }
-
-
 }
-
 
 @media screen and (max-width: 1024px) {
   .services__cards {
@@ -295,7 +292,6 @@
     margin-bottom: 3rem;
   }
 
-
   .cardBody {
     text-align: justify;
   }
@@ -316,7 +312,9 @@
   border-radius: 12px;
   text-align: center;
   color: #fff;
-  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 9px 18px rgba(0, 0, 0, 0.12),
+    0 5px 7px rgba(0, 0, 0, 0.05);
 }
 
 .shadowEffect {
@@ -327,7 +325,9 @@
   text-align: center;
   align-items: center;
   border: 1px solid #ececec;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.3),
+    0 15px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* Footer Styling */

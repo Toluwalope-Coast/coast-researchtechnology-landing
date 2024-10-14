@@ -79,6 +79,7 @@
     --fs-lg: 2.4rem;
     --fs-xl: 3rem;
     --fs-lg-pc: 4rem;
+    --ff-head: 'Spectral', serif;
 
     scroll-behavior: smooth;
     --color-dark: #35203b;

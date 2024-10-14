@@ -1,13 +1,20 @@
-import React from "react";
-import style from "./training.module.css";
-import Image from "next/image";
-import Link from "next/link";
-import { trainingSlides } from "@/lib/data";
-import TrainingCarousel from "@/components/AllCarousel/TrainingCarousel/TrainingCarousel";
+import React from 'react';
+import style from './training.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+import { trainingSlides } from '@/lib/data';
+import TrainingCarousel from '@/components/AllCarousel/TrainingCarousel/TrainingCarousel';
 
 const page = () => {
   return (
     <main className="first-section">
+      <div className="visually-hidden">
+        <h1>Empowering the Future of Tech Professionals</h1>
+        <p>
+          Hands-on training programs designed to equip you with industry-leading
+          skills.
+        </p>
+      </div>
       <section className={style.techie}>
         <Image
           src="/coast-segun-dup.png"
