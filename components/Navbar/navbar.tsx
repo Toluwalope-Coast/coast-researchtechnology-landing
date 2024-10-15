@@ -28,32 +28,27 @@ interface NavLinkData {
 const navLinks: NavLinkData[] = [
   { href: '/', label: 'Home' },
   {
-<<<<<<< HEAD
-    href: "/training",
-    label: "Training",
-    submenu: [
-      { href: "/training/courses", label: "Courses" },
-      { href: "#", label: "Admission" },
-    ],
-  },
-  {
-    href: "",
-    label: "About Us",
-=======
     href: '/training',
     label: 'Training',
->>>>>>> 369d85f8c1701a1d5b99f3bc30137d1b58b76efe
     submenu: [
       { href: '/training/courses', label: 'Courses' },
       { href: '#', label: 'Admission' },
     ],
   },
-<<<<<<< HEAD
-  { href: "/contact", label: "Contact Us" },
-  { href: "/services", label: "Services" },
-  { href: "/career", label: "Career" },
-  { href: "/coast-craft", label: "Coast Craft" },
-=======
+  {
+    href: '',
+    label: 'About Us',
+    href: '/training',
+    label: 'Training',
+    submenu: [
+      { href: '/training/courses', label: 'Courses' },
+      { href: '#', label: 'Admission' },
+    ],
+  },
+  { href: '/contact', label: 'Contact Us' },
+  { href: '/services', label: 'Services' },
+  { href: '/career', label: 'Career' },
+  { href: '/coast-craft', label: 'Coast Craft' },
   {
     href: '',
     label: 'About Us',
@@ -66,7 +61,6 @@ const navLinks: NavLinkData[] = [
   { href: '/services', label: 'Services' },
   { href: '/career', label: 'Career' },
   { href: '/coast-craft', label: 'Coast Craft' },
->>>>>>> 369d85f8c1701a1d5b99f3bc30137d1b58b76efe
 ];
 
 // Component for individual navigation links or dropdown triggers

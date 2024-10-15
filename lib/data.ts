@@ -10,7 +10,8 @@ import {
 export const slides: ISlide[] = [
   {
     id: '1',
-    image: '/tutorial.png',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/tutorial.webp?alt=media&token=029195b3-2fe2-4db6-87da-db7ce89138f9',
     heading: 'Innovating Tomorrow with Bespoke Software Solutions',
     text: 'Custom software development tailored to your business needs.',
     tip: 'Unlock Growth',
@@ -19,7 +20,8 @@ export const slides: ISlide[] = [
   },
   {
     id: '2',
-    image: '/craft.png',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/craft.webp?alt=media&token=490895ad-ee9f-4226-9e94-92f5e0168cbf',
     heading: 'Coastlink24 – Revolutionizing Loan Management',
     text: 'A seamless platform for managing loan requests, disbursements, and repayments via USSD or web.',
     tip: 'Discover Coastlink24',
@@ -28,7 +30,8 @@ export const slides: ISlide[] = [
   },
   {
     id: '3',
-    image: '/lend-asset.png',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/tutorial.webp?alt=media&token=029195b3-2fe2-4db6-87da-db7ce89138f9',
     heading: 'LendAsset API – Connecting Asset Providers and Lenders',
     text: 'An API platform designed to link asset providers and lenders effortlessly.',
     tip: 'Explore LendAsset',
@@ -37,7 +40,8 @@ export const slides: ISlide[] = [
   },
   {
     id: '4',
-    image: '/companyhero.png',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/companyhero.webp?alt=media&token=b0b7e7eb-da38-4458-9c69-9f6d429c08ff',
     heading: 'Empowering the Future of Tech Professionals',
     text: 'Hands-on training programs designed to equip you with industry-leading skills.',
     tip: 'Get Trained',
@@ -46,7 +50,8 @@ export const slides: ISlide[] = [
   },
   {
     id: '5',
-    image: '/recruit.png',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/recruit.webp?alt=media&token=91a74347-703e-4040-bb48-18255b050cf0',
     heading: 'Recruitment Services for Top Tech Talent',
     text: 'Find the right candidates to drive your business forward.',
     tip: 'Hire the Best',
@@ -55,7 +60,8 @@ export const slides: ISlide[] = [
   },
   {
     id: '6',
-    image: '/craft.png',
+    image:
+      'https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/tutorial.webp?alt=media&token=029195b3-2fe2-4db6-87da-db7ce89138f9',
     heading: 'Coast Craft – Insights and Innovation',
     text: 'Your hub for tech news, tips, and trends.',
     tip: 'Read the Latest',

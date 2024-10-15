@@ -93,15 +93,11 @@
   display: none;
 }
 
-body
-  > section
-  > div.parallax__layer.parallax__layer--base
-  > main
-  > div:nth-child(1) {
+body>section>div.parallax__layer.parallax__layer--base>main>div:nth-child(1) {
   overflow: hidden;
 }
 
-img.our-project {
+.our-project {
   display: block;
   position: absolute;
   width: 100%;
@@ -181,12 +177,10 @@ img.our-project {
   font-weight: 500;
   transition: 0.8s;
   background-size: 280% auto;
-  background-image: linear-gradient(
-    325deg,
-    var(--btn-bg-2) 0%,
-    var(--btn-bg-1) 55%,
-    var(--btn-bg-2) 90%
-  );
+  background-image: linear-gradient(325deg,
+      var(--btn-bg-2) 0%,
+      var(--btn-bg-1) 55%,
+      var(--btn-bg-2) 90%);
   border: none;
   border-radius: var(--radii);
   color: var(--btn-bg-color);
@@ -391,10 +385,8 @@ img.client-img {
   width: calc(var(--s) / 2 + var(--m));
   float: left;
   height: 120%;
-  shape-outside: repeating-linear-gradient(
-    #0000 0 calc(var(--f) - 3px),
-    #000 0 var(--f)
-  );
+  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
+      #000 0 var(--f));
 }
 
 .programs {
@@ -535,7 +527,7 @@ section.testimonials h2 {
   text-transform: uppercase;
 }
 
-section.testimonials > p {
+section.testimonials>p {
   line-height: 2;
   padding: 0.5rem;
   margin: 1rem;
@@ -605,6 +597,7 @@ section.testimonials > p {
 }
 
 @media (min-width: 768px) {
+
   .hero,
   .showcase {
     justify-content: flex-start;
@@ -687,7 +680,7 @@ section.testimonials > p {
     display: block;
   }
 
-  img.our-project {
+  .our-project {
     display: none;
   }
 

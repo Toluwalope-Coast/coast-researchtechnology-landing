@@ -16,12 +16,14 @@ const ServicesPage: React.FC = () => {
       <div className="parallax__layer parallax__layer--base">
         <main>
           <div>
-            <Image
-              src="/our_project2.gif"
-              alt="Code preview"
+            <video
+              src="https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/our_project2.webm?alt=media&token=ab6d072e-7b21-4499-88d8-2ddd6239bbe2"
               width={250}
               height={250}
               className="our-project"
+              autoPlay
+              loop
+              muted
             />
           </div>
 
