@@ -35,20 +35,18 @@ const navLinks: NavLinkData[] = [
       { href: '#', label: 'Admission' },
     ],
   },
-  {
-    href: '',
-    label: 'About Us',
-    href: '/training',
-    label: 'Training',
-    submenu: [
-      { href: '/training/courses', label: 'Courses' },
-      { href: '#', label: 'Admission' },
-    ],
-  },
-  { href: '/contact', label: 'Contact Us' },
-  { href: '/services', label: 'Services' },
-  { href: '/career', label: 'Career' },
-  { href: '/coast-craft', label: 'Coast Craft' },
+  // {
+  //   href: '',
+  //   label: 'About Us',
+  //   submenu: [
+  //     { href: '/training/courses', label: 'Courses' },
+  //     { href: '#', label: 'Admission' },
+  //   ],
+  // },
+  // { href: '/contact', label: 'Contact Us' },
+  // { href: '/services', label: 'Services' },
+  // { href: '/career', label: 'Career' },
+  // { href: '/coast-craft', label: 'Coast Craft' },
   {
     href: '',
     label: 'About Us',

@@ -48,7 +48,6 @@
   width: 90%;
 }
 
-<<<<<<< HEAD
 /* 
 form {
     display: flex;
@@ -83,57 +82,58 @@ form textarea {
 /* From Uiverse.io by Satwinder04 */
 /* Input container */
 .input-container {
-    position: relative;
-    margin: 20px;
+  position: relative;
+  margin: 20px;
 }
 
 /* Input field */
 .input-field {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
-    background-color: transparent;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
 }
 
 /* Input label */
 .input-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 16px;
-    color: rgba(204, 204, 204, 0);
-    pointer-events: none;
-    transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 /* Input highlight */
 .input-highlight {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 0;
-    background-color: #007bff;
-    transition: all 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: all 0.3s ease;
 }
 
 /* Input field:focus styles */
 .input-field:focus+.input-label {
-    top: -20px;
-    font-size: 12px;
-    color: #007bff;
+  top: -20px;
+  font-size: 12px;
+  color: #007bff;
 }
 
 .input-field:focus+.input-label+.input-highlight {
-    width: 100%;
-=======
+  width: 100%;
+}
+
 .contact-form {
   position: relative;
-  height:;
+  height: ;
   width: 100%;
   padding: 5rem 2rem;
   background-color: var(--body-color);
@@ -171,7 +171,6 @@ form textarea {
   padding: 15px 0;
   font-size: 18px;
   color: var(--primary-text-color);
->>>>>>> 369d85f8c1701a1d5b99f3bc30137d1b58b76efe
 }
 
 .form-control input:focus,
@@ -197,10 +196,10 @@ form textarea {
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.form-control input:focus + label span,
-.form-control input:valid + label span,
-.form-control textarea:focus + label span,
-.form-control textarea:valid + label span {
+.form-control input:focus+label span,
+.form-control input:valid+label span,
+.form-control textarea:focus+label span,
+.form-control textarea:valid+label span {
   color: var(--primary-text-color);
   transform: translateY(-30px);
 }
@@ -255,7 +254,7 @@ p.tel-number {
   color: var(--primary-text-color);
 }
 
-div.contact-content > div > div:nth-child(2) {
+div.contact-content>div>div:nth-child(2) {
   margin-block-start: 2rem;
 }
 
