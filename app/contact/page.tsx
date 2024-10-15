@@ -38,16 +38,52 @@ const ContactPage: React.FC = () => {
             </div>
           </div>
           <div className="contact-content">
-            <form>
-              <div className="input-container">
-                <input
-                  placeholder="Enter text"
-                  className="input-field"
-                  type="text"
-                />
-                <label className="input-label">Enter text</label>
-                <span className="input-highlight"></span>
+            <form className="contact-form">
+              <div className="form-control">
+                <input type="text" required />
+                <label>
+                  <span style={{ transitionDelay: '0ms' }}>En</span>
+                  <span style={{ transitionDelay: '50ms' }}>te</span>
+                  <span style={{ transitionDelay: '100ms' }}>r</span>
+                  <span style={{ transitionDelay: '150ms' }}></span>
+                  <span style={{ transitionDelay: '200ms' }}>n</span>
+                  <span style={{ transitionDelay: '250ms' }}>a</span>
+                  <span style={{ transitionDelay: '300ms' }}>m</span>
+                  <span style={{ transitionDelay: '350ms' }}>e</span>
+                </label>
               </div>
+
+              <div className="form-control">
+                <input type="text" required />
+                <label>
+                  <span style={{ transitionDelay: '0ms' }}>En</span>
+                  <span style={{ transitionDelay: '50ms' }}>te</span>
+                  <span style={{ transitionDelay: '100ms' }}>r</span>
+                  <span style={{ transitionDelay: '150ms' }}></span>
+                  <span style={{ transitionDelay: '200ms' }}>em</span>
+                  <span style={{ transitionDelay: '250ms' }}>a</span>
+                  <span style={{ transitionDelay: '300ms' }}>i</span>
+                  <span style={{ transitionDelay: '350ms' }}>l</span>
+                </label>
+              </div>
+
+              <div className="form-control">
+                <textarea required></textarea>
+                <label>
+                  <span style={{ transitionDelay: '0ms' }}>En</span>
+                  <span style={{ transitionDelay: '50ms' }}>ter</span>
+                  <span style={{ transitionDelay: '100ms' }}></span>
+                  <span style={{ transitionDelay: '150ms' }}>me</span>
+                  <span style={{ transitionDelay: '200ms' }}>ss</span>
+                  <span style={{ transitionDelay: '250ms' }}>a</span>
+                  <span style={{ transitionDelay: '300ms' }}>g</span>
+                  <span style={{ transitionDelay: '350ms' }}>e</span>
+                </label>
+              </div>
+
+              <button className="submit-btn" type="submit">
+                SUBMIT
+              </button>
             </form>
 
             <div className="contact-details">
