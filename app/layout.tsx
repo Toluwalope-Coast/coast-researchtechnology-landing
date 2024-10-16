@@ -1,22 +1,21 @@
 import React from 'react';
 import Head from 'next/head';
 import type { Metadata } from 'next';
-import { Inter, Poppins, Spectral } from 'next/font/google';
+import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import { InternetCheck } from '@/utils';
 import { Footer } from '@/components/Footer/footer';
 import { Navbar } from '@/components/Navbar/navbar';
 
 const inter = Inter({ subsets: ['latin'] });
+// const spectral = Spectral({
+//   subsets: ['latin'],
+//   weight: ['400', '700'],
+// });
 // const poppins = Poppin({
 //   weight: ["300", "400", "500", "600", "700", "800", "900"],
 //   subsets: ["latin"],
 // });
-
-const spectral = Spectral({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Choose the weights you need
-});
 
 export const metadata: Metadata = {
   title: 'Coast Research Technology',
@@ -30,9 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <script src="/flickity.pkgd.min.js" async></script>
-      </Head>
+      </Head> */}
       <body className={inter.className}>
         <Navbar />
         {children}

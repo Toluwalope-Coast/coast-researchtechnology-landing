@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap');
 
 @import '~slick-carousel/slick/slick.css';
@@ -79,18 +80,17 @@
     --fs-lg: 2.4rem;
     --fs-xl: 3rem;
     --fs-lg-pc: 4rem;
-    --ff-head: 'Spectral', serif;
+    --ff-head: "Spectral",
+      serif;
 
     scroll-behavior: smooth;
     --color-dark: #35203b;
     --color-primary: #500480;
     --color-white: #ffffff;
     --color-text-gray: hsl(0, 0%, 25%);
-    --bg-gradient: linear-gradient(
-      90deg,
-      #35203b -118.5%,
-      var(--color-primary) 100%
-    );
+    --bg-gradient: linear-gradient(90deg,
+        #35203b -118.5%,
+        var(--color-primary) 100%);
   }
 
   .dark {

@@ -3,12 +3,10 @@
   flex-direction: column;
   /* position: relative; */
   background: rgb(217, 217, 217);
-  background: radial-gradient(
-    circle,
-    var(--clr-about-gradient1) 0%,
-    var(--clr-about-gradient2) 58%,
-    var(--clr-about-gradient3) 75%
-  );
+  background: radial-gradient(circle,
+      var(--clr-about-gradient1) 0%,
+      var(--clr-about-gradient2) 58%,
+      var(--clr-about-gradient3) 75%);
   justify-content: space-between;
 }
 
@@ -195,10 +193,8 @@
   width: calc(var(--s) / 2 + var(--m));
   float: left;
   height: 120%;
-  shape-outside: repeating-linear-gradient(
-    #0000 0 calc(var(--f) - 3px),
-    #000 0 var(--f)
-  );
+  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px),
+      #000 0 var(--f));
 }
 
 .teams h2 {
