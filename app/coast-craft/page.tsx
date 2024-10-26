@@ -1,11 +1,13 @@
-import React from "react";
-import Styles from "./coast-craft.module.css";
-import { TrendingNews } from "@/components/coast-craft/TrendingNews";
-import blogPosts from "@/lib/api_data.json";
-import { IBlogMeta, IBlogPost } from "@/lib/type";
-import { Hero } from "@/components/coast-craft/Hero";
-import { BlogArea } from "@/components/coast-craft/BlogArea";
-import { BlogFilter } from "@/components/coast-craft/BlogFilter";
+import React from 'react';
+import Styles from './coast-craft.module.css';
+import { TrendingNews } from '@/components/coast-craft/TrendingNews';
+import blogPosts from '@/lib/api_data.json';
+import { IBlogMeta, IBlogPost } from '@/lib/type';
+import { Hero } from '@/components/coast-craft/Hero';
+import { BlogArea } from '@/components/coast-craft/BlogArea';
+import { BlogFilter } from '@/components/coast-craft/BlogFilter';
+import { VideoArea } from '@/components/coast-craft/VideoArea';
+import { TopBlogArea } from '@/components/coast-craft/TopBlogArea';
 
 const CoastCraftPage: React.FC = () => {
   const blog: IBlogPost[] = blogPosts.posts;
@@ -28,6 +30,12 @@ const CoastCraftPage: React.FC = () => {
 
       {/* <!-- BLOG AREA TAGS --> */}
       <BlogFilter blogArea={blogMetaArray} />
+
+      {/* VIDEO AREA SECTION */}
+      <VideoArea blogArea={blogMetaArray} />
+
+      {/* TOP AREA SECTION */}
+      <TopBlogArea blogArea={blogMetaArray} />
     </main>
   );
 };

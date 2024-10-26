@@ -1,12 +1,13 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React, { useState } from "react";
-import Link from "next/link";
-import { X } from "lucide-react";
-import TeamCarousel from "@/components/AllCarousel/TeamCarousel/TeamCarousel";
-import { team } from "@/lib/data";
-import "../aboutUs.css";
+import Image from 'next/image';
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { X } from 'lucide-react';
+import TeamCarousel from '@/components/AllCarousel/TeamCarousel/TeamCarousel';
+import { team } from '@/lib/data';
+import '../aboutUs.css';
+import { Metadata } from 'next';
 
 const OurMissionPage: React.FC = () => {
   // State to control modal visibility

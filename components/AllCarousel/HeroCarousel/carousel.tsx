@@ -60,11 +60,11 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
               />
               <div className={styles.slideContent}>
                 <h2 className={styles.slideHead}>{slide.heading}</h2>
-                <div className={styles.slideText}>{slide.text}</div>
-                <div className={styles.tip}>
+                <p className={styles.slideText}>{slide.text}</p>
+                <p className={styles.tip}>
                   {slide.tip}{' '}
                   <Link href={slide.url || '#'}> {slide.linkText} </Link>
-                </div>
+                </p>
               </div>
             </div>
           </div>
