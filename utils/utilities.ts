@@ -1,3 +1,5 @@
+import jwt from 'jsonwebtoken';
+
 export function formatTimestampToDate(timestamp: number) {
   /**
    * Formats a given Unix timestamp into a date string in the format YYYY-MM-DD.
@@ -11,8 +13,8 @@ export function formatTimestampToDate(timestamp: number) {
 
   // Get the year, month, and day
   const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are 0-indexed
-  const day = String(date.getDate()).padStart(2, "0");
+  const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+  const day = String(date.getDate()).padStart(2, '0');
 
   // Return the formatted date as 'YYYY-MM-DD'
   return `${year}-${month}-${day}`;
@@ -31,11 +33,32 @@ export function formatTimeStampToLocalDate(timestamp: number) {
 
   // Define options for the desired output format: "Month Day, Year"
   const options: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   };
 
   // Use toLocaleDateString with the desired format
-  return date.toLocaleDateString("en-US", options);
+  return date.toLocaleDateString('en-US', options);
 }
+
+/**
+ * Generates a JSON Web Token (JWT) for the specified user.
+ *
+ * @param {string} userId - Unique identifier of the user.
+ * @returns {string} - Signed JWT containing the user ID.
+ * @throws {Error} - Throws an error if the JWT secret is not set in environment variables.
+ */
+export const generateToken = (userId: string): string => {
+  const secret = process.env.JWT;
+
+  if (!secret) {
+    console.error('JWT secret is not set in environment variables.');
+    throw new Error('Server configuration error');
+  }
+
+  // Setting an expiration time for security
+  const options = { expiresIn: '1h' };
+
+  return jwt.sign({ id: userId }, secret, options);
+};
