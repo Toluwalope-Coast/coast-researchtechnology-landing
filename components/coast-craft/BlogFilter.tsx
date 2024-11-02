@@ -6,6 +6,7 @@ import { Button } from '@nextui-org/react';
 import React, { useEffect, useState } from 'react';
 import Styles from './coast-craft.module.css';
 import { BlogArea } from './BlogArea';
+import Newsletter from './Newsletter';
 
 export const BlogFilter: React.FC<IBlogArea> = ({ blogArea }) => {
   // State to hold filtered blogs
@@ -96,35 +97,9 @@ export const BlogFilter: React.FC<IBlogArea> = ({ blogArea }) => {
             </div>
           </div>
         </div>
-        {/* <div className={Styles.secondContainer}> */}
-        <div className={Styles.newsletter}>
-          <div>
-            <h3>Subscribe to our newsletter</h3>
-            <form action="submit">
-              <input
-                type="email"
-                id="nemail"
-                placeholder="Your E-mail"
-                name="Email"
-              />
-              <button type="submit" className={Styles.newsBtn}>
-                Subscribe
-              </button>
-            </form>
-          </div>
-          <div>
-            <p>Stay informed and inspired with our Coast Craft newsletter.</p>
-            <p>
-              Receive the latest updates on software development, tech trends,
-              and insightful articles delivered straight to your inbox.
-            </p>
-            <p>
-              Join our community and craft exceptional code as we navigate the
-              digital horizon together!
-            </p>
-          </div>
+        <div className={Styles.secondContainer}>
+          <Newsletter />
         </div>
-        {/* </div> */}
       </div>
     </>
   );

@@ -113,7 +113,7 @@
     --clr-paragraph: #df80ff;
     --clr-notable: var(--plain-color);
     --clr-side-drawer: #270739e6;
-    --clr-overlay: rgba(0, 0, 0, 0.75);
+    --clr-overlay: rgba(0, 0, 0, 0.4);
     --clr-testimonial: #df80ff47;
   }
 }

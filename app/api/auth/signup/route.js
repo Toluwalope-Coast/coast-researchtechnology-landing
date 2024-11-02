@@ -1,5 +1,5 @@
 // app/api/auth/signup/route.js
-import { errorHandler } from '@/middlewares/errorHandler';
+import { signUp } from '@/controllers/auth';
 import connectToDatabase from '@/lib/mongodb';
 
 export async function POST(req, res) {

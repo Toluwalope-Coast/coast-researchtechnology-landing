@@ -84,6 +84,29 @@ export interface ITwitterMeta {
   post_image_url: string;
 }
 
+export interface IMetadata {
+  title: string;
+  description: string;
+  keywords: string[];
+  openGraph: {
+    title: string;
+    description: string;
+    url: string;
+    images: {
+      url: string;
+      alt: string;
+    }[];
+    type: string;
+  };
+  twitter: {
+    card: string;
+    title: string;
+    description: string;
+    images: string[];
+  };
+  authors: { name: string }[];
+}
+
 // Define Blog Meta Information
 export interface IBlogMeta {
   title: string;
@@ -135,6 +158,10 @@ export interface IBlogArea {
   blogArea: IBlogMeta[];
 }
 
+export interface IBlogPostPageProps {
+  initialPost: IBlogPost | null;
+}
+
 export interface DashboardLayoutProps {
   children?: React.ReactNode;
   title: string;
@@ -145,4 +172,18 @@ export interface ICourses {
   id: number;
   title: string;
   duration: string;
+}
+
+export interface IUser {
+  id: string;
+  firstname: string;
+  lastname: string;
+  email: string;
+  password?: string;
+  gender?: string;
+  fromGoogle?: boolean;
+  role: String;
+  resetPasswordToken?: string;
+  resetPasswordTokenExpiry?: Date;
+  lastSignedOut?: Date;
 }

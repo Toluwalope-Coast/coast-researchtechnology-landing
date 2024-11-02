@@ -80,7 +80,7 @@
             "type": "image",
             "data": {
               "file": {
-                "url": "https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/diving-into-responsive-design-crafting-user-friendly-interfaces.png?alt=media&token=ed702b3a-7100-40dd-9e46-41b3ba3aec25"
+                "url": "https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/diving-into-responsive-design-crafting-user-friendly-interfaces.webp?alt=media&token=a144be99-d49f-4859-98a7-a96cd27c639b"
               },
               "caption": "Responsive Design",
               "withBorder": false,
@@ -339,7 +339,7 @@
             "type": "image",
             "data": {
               "file": {
-                "url": "img/javascript-variables.png"
+                "url": "https://firebasestorage.googleapis.com/v0/b/coast-craft.appspot.com/o/javaScript-essentials-from-variables-to-functions.webp?alt=media&token=eb1e767b-f63a-49b1-b353-df75cf6d310c"
               },
               "caption": "JavaScript variables",
               "withBorder": false,

@@ -1,7 +1,9 @@
+// app/coast-craft/pages.tsx
+
 import React from 'react';
 import Styles from './coast-craft.module.css';
 import { TrendingNews } from '@/components/coast-craft/TrendingNews';
-import blogPosts from '@/lib/api_data.json';
+import blogPosts from '@/public/api_data.json';
 import { IBlogMeta, IBlogPost } from '@/lib/type';
 import { Hero } from '@/components/coast-craft/Hero';
 import { BlogArea } from '@/components/coast-craft/BlogArea';
